@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("https://i.stack.imgur.com/HCfU2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,81 @@
+.service {
+  margin: 150px 0;
+  text-align: center;
+}
+.service h2 {
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.service p {
+  margin-top: 17px;
+  font-size: 15px;
+  color: rgb(96, 96, 96);
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.service-item {
+  display: flex;
+  margin-top: 65px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+.service-item1 {
+  margin: 20px 20px;
+  width: 250px;
+  cursor: pointer;
+  height: 310px;
+  padding: 40px 0;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+  transition: 0.6s;
+}
+.service-item1:hover {
+  box-shadow: 10px 10px 25px 0px grey;
+  transition: 0.6s;
+  background-color: white;
+}
+.service-detail {
+  margin-top: 15px;
+}
+.service-detail h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.service-detail p {
+  margin-top: 14px;
+  color: rgb(136, 132, 132);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 650px) {
+  .service h2 {
+    font-size: 25px;
+  }
+  .service p {
+    font-size: 13px;
+  }
+  .service-item1 {
+   
+    width: 200px;
+    margin: 20px 10px;
+    height: 270px;
+    /* padding: 40px 0; */
+  
+  }
+  .service-detail h3 {
+    font-size: 17px;
+  
+  }
+  .service-detail p {
+  
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+}

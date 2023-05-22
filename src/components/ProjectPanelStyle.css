@@ -1,0 +1,132 @@
+.project-panel {
+  margin: 120px 0;
+}
+
+.project-panel h2 {
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  letter-spacing: 0.7px;
+}
+.project-panel p {
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 70px;
+  letter-spacing: 0.4;
+}
+.pro-project-panel {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project-panel-detail {
+  width: 30%;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-panel-detail h3 {
+  font-size: 30px;
+  font-weight: 550;
+}
+.project-panel-detail p {
+  margin: 10px 0;
+  line-height: 23px;
+  color: grey;
+  letter-spacing: 0.3px;
+}
+.project-panel-detail button {
+  background-color: rgb(39, 39, 239);
+  color: white;
+  border-radius: 24px;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgb(39, 39, 239);
+  box-shadow: 0px 0px 2px 0px rgb(39, 39, 239);
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 550;
+  transition: 0.6s;
+}
+.project-panel-detail button:hover {
+  transition: 0.6s;
+  background: transparent;
+  color: black;
+  border: 1px solid rgb(39, 39, 239);
+}
+
+.project-panel-img {
+  width: 250px;
+  height: 250px;
+  margin-top: 25px;
+}
+
+.project-panel-icons {
+  display: flex;
+  width: 70px;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-panel-icons a {
+  color: rgb(39, 39, 239);
+  font-size: 22px;
+}
+.project-panel-icons a:hover {
+  color: rgb(59, 59, 240);
+}
+@media screen and (max-width: 1000px) {
+  .project-panel-detail {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .project-panel-img {
+    display: none;
+
+  }
+  .project-panel h2 {
+    font-size: 26px;
+    margin-top: 50px;
+    letter-spacing: 0.4px;
+  }
+  .project-panel p {
+    font-size: 13px;
+    letter-spacing: 0.2;
+  }
+}
+@media screen and (max-width: 630px) {
+  .project-panel-detail {
+    width: 80%;
+  }
+  .project-panel-detail h3 {
+    font-size: 21px;
+  }
+  .project-panel-detail p {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .project-panel h2 {
+    font-size: 23px;
+    margin-top: 50px;
+    letter-spacing: 0.2px;
+  }
+  .project-panel p {
+    font-size: 11px;
+    letter-spacing: 0.1px;
+  }
+}

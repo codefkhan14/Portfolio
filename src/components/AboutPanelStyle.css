@@ -1,0 +1,77 @@
+.aboutPanel {
+  font-family: arial;
+  font-size: 24px;
+  border-radius: 20px;
+  max-width: 750px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(39, 39, 239),
+    rgb(215, 14, 246)
+  );
+  transition: 0.9s;
+  padding: 130px 0;
+  margin: 80px auto;
+}
+.aboutPanel h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media  screen and (max-width:1000px) {
+
+  .aboutPanel {
+  font-size: 24px;
+  max-width: 550px;
+  padding: 110px 0;
+  margin: 80px auto;
+  transition: 0.9s;
+}
+.aboutPanel h2 {
+  font-size: 40px;
+ 
+}
+}
+@media  screen and (max-width:630px) {
+
+  .aboutPanel {
+  font-size: 24px;
+  max-width: 450px;
+  padding: 100px 0;
+  margin: 80px auto;
+  transition: 0.9s;
+}
+.aboutPanel h2 {
+  font-size: 33px;
+ 
+}
+}
+@media  screen and (max-width:500px) {
+
+  .aboutPanel {
+  font-size: 24px;
+  max-width: 350px;
+  padding: 80px 0;
+  margin: 80px auto;
+  transition: 0.9s;
+}
+.aboutPanel h2 {
+  font-size: 25px;
+ 
+}
+}
+@media  screen and (max-width:500px) {
+
+  .aboutPanel {
+  font-size: 24px;
+  max-width: 300px;
+  padding: 60px 0;
+  margin: 80px auto;
+}
+.aboutPanel h2 {
+  font-size: 20px;
+ 
+}
+}
