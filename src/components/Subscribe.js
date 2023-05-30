@@ -14,7 +14,7 @@ function Subscribe() {
       <div className="pro-subscribe">
         <input type="email" required placeholder="Email" />
       </div>
-      <button>Submit</button>
+      <button className="all-btn">Submit</button>
     </form>
   </div>
     </>

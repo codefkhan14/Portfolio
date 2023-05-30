@@ -26,7 +26,7 @@ function Intro() {
 <br />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam delectus fugit facere recusandae architecto aliquam consequuntur libero dolorum magnam dolores.
           </p>
-        <a href="/Project"> <button>get cv</button></a> 
+        <a href="/Project"> <button className="all-btn">get cv</button></a> 
         </div>
 
       </div>

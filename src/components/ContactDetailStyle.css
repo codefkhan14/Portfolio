@@ -37,21 +37,8 @@ textarea {
 .contactDetail button {
   padding: 10px 35px;
   margin: 10px 0;
-  text-transform: uppercase;
-  background-color: rgb(39, 39, 239);
-  color: white;
-  border: 1px solid rgb(39, 39, 239);
-  outline: none;
-  font-weight: bold;
-  border-radius: 20px;
-  transition: 0.6s;
 }
 
-.contactDetail button:hover {
-  transition: 0.6s;
-  background-color: transparent;
-  color: black;
-}
 
 @media screen and (max-width: 750px) {
   .contactDetail {

@@ -18,7 +18,7 @@ function AnyIdea() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
             hic illo ullam architecto quibusdam!
           </p>
-        <Link to="/Contact"><button>CONTACT ME</button></Link>  
+        <Link to="/Contact"><button className="all-btn">CONTACT ME</button></Link>  
         </div>
       </div>
     </>

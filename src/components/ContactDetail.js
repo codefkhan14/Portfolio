@@ -22,7 +22,7 @@ function ContactDetail() {
         <div className="input-group">
           <textarea rows="8" placeholder="Message" required></textarea>
         </div>
-        <button>Submit</button>
+        <button className='all-btn'>Submit</button>
       </form>
     </div>
     </>

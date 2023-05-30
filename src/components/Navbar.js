@@ -1,36 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./NavbarStyle.css";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 function Navbar() {
+  const [stickyClass, setStickyClass] = useState('');
+  useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+    return () => window.removeEventListener('scroll', stickNavbar);
+  }, []);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      // window height changed for the demo
+      windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
+    }
+  };
+
+
+
+
+
   const [clickMode, setModeClick] = useState(false);
   const ClickModeIcons = () => {
     setModeClick(!clickMode);
     
-    // light mode 
-    // if(!clickMode) 
-    // document.body.style = 'background: black;';
-    // else 
-    // document.body.style = 'background: https://i.stack.imgur.com/HCfU2.png;';
   };
 
 
   const [clickMenu, setClickMenu] = useState(false);
   const ClickMenuIcons = () => {
+    if(clickMenu)
+    document.body.style.overflow = 'scroll';
+    else
+    document.body.style.overflow= 'hidden';
     setClickMenu(!clickMenu);
+    
   };
 
   return (
     <>
-      <section className="main-navbar">
+      <section className={`main-navbar ${stickyClass}`}>
         <h2 className="navbarname">
           <Link to="/">Furkan</Link>
         </h2>
 
         <div className="main-nav">
           <ul className={clickMenu ? "navbanner active" : "navbanner"}>
+          
             <li>
               <Link className="active" to="/">Home</Link>
             </li>
