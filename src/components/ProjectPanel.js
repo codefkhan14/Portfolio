@@ -55,7 +55,7 @@ function ProjectPanel() {
               <a href="https://github.com/codefkhan14" target="_blank" rel="noreferrer">
                 <AiFillGithub />
               </a>
-              <a href="https://codefkhan14.github.io/Portfolio/">
+              <a href="https://codefkhan14.github.io/Portfolio/" target="_blank" rel="noreferrer">
                 <FiExternalLink />
               </a>
             </div>
