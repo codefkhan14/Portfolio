@@ -8,21 +8,19 @@
   align-items: center;
   transition: 0.9s;
 }
-.sticky-nav {
+.sticky-nav-come {
   position: fixed;
   top: 0;
   padding: 0 150px;
   background-image: url("https://i.stack.imgur.com/HCfU2.png");
-  box-shadow: 0px 0px  7px black;
+  box-shadow: 0px 0px 7px black;
   z-index: 10;
   transition: 0.9s;
   left: 0;
 }
-.main-navbar.active{
+.main-navbar.active {
   background-color: black;
-
 }
-
 
 .navbarname a {
   color: rgb(39, 39, 239);
@@ -32,7 +30,6 @@
   font-size: 30px;
 }
 
-
 .navbarname a:hover {
   color: rgb(75, 75, 75);
 }
@@ -41,10 +38,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
 }
-.main-nav.active li a{
+.main-nav.active li a {
   color: white;
 }
 
@@ -83,11 +78,9 @@
   left: 20px;
   transform: 0.3s ease;
   background-color: rgb(150, 150, 150);
-
 }
 
-
-.navIcons.active i{
+.navIcons.active i {
   color: white;
 }
 
@@ -134,21 +127,34 @@
     padding: 28px;
   }
   .navbanner li a {
-  color: white;
-  font-size: 30px;
+    color: white;
+    font-size: 25px;
+  }
+  .navbanner li a.active::after,
+  .navbanner li a:hover::after {
+    width: 40px;
+    bottom: 14px;
   }
   .modeMenu {
     display: initial;
   }
-  .navIcons i{
+  .navIcons i {
     margin: 4px;
   }
- 
 }
 
 @media screen and (max-width: 500px) {
   .main-navbar {
     padding: 0 90px;
+  }
+  .navbanner li a {
+    color: white;
+    font-size: 20px;
+  }
+  .navbanner li a.active::after,
+  .navbanner li a:hover::after {
+    width: 30px;
+    bottom: 14px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -156,7 +162,6 @@
     padding: 0 30px;
   }
   .navbarname a {
-   
     font-size: 25px;
   }
 }

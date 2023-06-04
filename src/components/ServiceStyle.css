@@ -5,6 +5,7 @@
 .service h2 {
   font-size: 33px;
   font-weight: bold;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 .service p {
@@ -54,28 +55,31 @@
 
 @media screen and (max-width: 650px) {
   .service h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .service p {
-    font-size: 13px;
+    font-size: 11px;
   }
   .service-item1 {
    
-    width: 200px;
+    width: 160px;
     margin: 20px 10px;
-    height: 270px;
-    /* padding: 40px 0; */
+    height: 240px;
   
   }
+  .service-item1 img{
+    width: 50px;
+    height: 50px;
+  }
   .service-detail h3 {
-    font-size: 17px;
+    font-size: 15px;
   
   }
   .service-detail p {
   
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
   }
 
 }

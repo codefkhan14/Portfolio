@@ -8,7 +8,7 @@ function SkillPanel() {
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reiciendis!</p>
 
       <div className="skill-box">
-        <span className="skill-title">HMTL</span>
+        <span className="skill-title">HTML</span>
         <div className="skill-bar">
           <span className="skill-per skill-html"><span className="skill-tooltip">95%</span> </span>
         </div>

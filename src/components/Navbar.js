@@ -14,7 +14,8 @@ function Navbar() {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       // window height changed for the demo
-      windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
+      windowHeight > 150 ? setStickyClass('sticky-nav-come') : setStickyClass('');
+  
     }
   };
 

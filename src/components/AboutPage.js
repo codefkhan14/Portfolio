@@ -1,22 +1,22 @@
 import React from "react";
 import "./AboutPage.css";
-function Intro() {
+function AboutPage() {
   return (
     <>
-      <div className="intro">
+      <div className="About-page-intro">
        
-        <div className="right">
-          <div className="img-stack">
+        <div className="About-page-right">
+          <div className="About-page-img-stack">
             <img
               src="https://themewagon.github.io/satner/img/about-us.png"
               alt=""
               width="450px"
               height="450px"
-              className="img"
+              className="About-page-img"
             />
           </div>
         </div>
-        <div className="left">
+        <div className="About-page-left">
           <h2>About me</h2>
         
           <p>
@@ -34,4 +34,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default AboutPage;

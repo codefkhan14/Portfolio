@@ -26,14 +26,15 @@
 @media screen and (max-width:550px) {
   .accordion h1 {
     margin-top: 30px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-  
+   font-size: 22px;
+   
   }
   .accordion p {
     margin: 10px 0 40px 0;
-   font-size: 13px;
+   font-size: 12px;
+  }
+  .accordion-body {
+    font-size: 10px;
   }
   
 }
