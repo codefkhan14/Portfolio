@@ -16,7 +16,7 @@ function Intro(props) {
             provclassNameent placeat ratione eius!
           </p>
         <Link to="/Contact"> <button className="intro-btn all-btn">hire me</button></Link> 
-        <Link to="/Project"> <button className="intro-btn all-btn">get cv</button></Link> 
+        <Link to="https://drive.google.com/file/d/1bfFHQqPvak80fwmjSPxIFrYuDDuvvXKY/view?usp=drive_link" target="_blank" rel="noreferrer"> <button className="intro-btn all-btn">get cv</button></Link> 
         </div>
 
         <div className="right">
