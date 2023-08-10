@@ -32,10 +32,6 @@ function Navbar() {
 
   const [clickMenu, setClickMenu] = useState(false);
   const ClickMenuIcons = () => {
-    if(clickMenu)
-    document.body.style.overflow = 'scroll';
-    else
-    document.body.style.overflow= 'hidden';
     setClickMenu(!clickMenu);
     
   };
