@@ -1,10 +1,10 @@
 import React from "react";
 import "./ServiceStyle.css";
 
-function Service() {
+function Service({cssClass}) {
   return (
     <>
-      <div className="service">
+      <div className={`service ${cssClass}`}>
         <h2>Services Offer</h2>
         <p>
           Is give may shall likeness made yielding spirit a itself togeth
@@ -23,7 +23,7 @@ function Service() {
                 libero fugiat eaque!
               </p>
             </div>
-          </div>
+          </div> 
           <div className="service-item1">
             <img
               src="https://themewagon.github.io/satner/img/services/s2.png"

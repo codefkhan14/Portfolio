@@ -1,10 +1,14 @@
 import React from "react";
 import "./SubscribeStyle.css";
 
-function Subscribe() {
+function Subscribe({cssClass}) {
   return (
     <>
- <div className="subscribe">
+    
+
+  
+<div className={`top-subscribe ${cssClass}`}>
+<div className={`subscribe ${cssClass}`}>
     <h2>get update from anywhere</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic?
@@ -16,6 +20,7 @@ function Subscribe() {
       </div>
       <button className="all-btn">Submit</button>
     </form>
+  </div>
   </div>
     </>
   );

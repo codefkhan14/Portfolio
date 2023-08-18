@@ -7,9 +7,9 @@ import AnyIdea from "../components/AnyIdea";
 import SkillPanel from "../components/SkillPanel";
 import Service from "../components/Service";
 import Spinner from "../components/Spinner";
-function Skills() {
+function Skills({onButtonClick, cssClass}) {
     const [load, setLoad] = useState(true);
-
+   
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
@@ -19,19 +19,19 @@ function Skills() {
     <div>
       {load ? (
         <div>
-          <Navbar />
-          <Spinner />
+          <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar />
-           <AboutPanel title="SKILLS" />
-         <SkillPanel />
+          <Navbar  onButtonClick={onButtonClick} cssClass={cssClass}/>
+           <AboutPanel title="SKILLS" cssClass={cssClass}/>
+         <SkillPanel cssClass={cssClass}/>
 
-      <Service/>
-       <AnyIdea />
-      <Footer />
-     <CopyRightBar />
+      <Service cssClass={cssClass}/>
+       <AnyIdea cssClass={cssClass}/>
+      <Footer cssClass={cssClass}/>
+     <CopyRightBar cssClass={cssClass}/>
         </div>
       )}
     </div>

@@ -8,8 +8,9 @@ import Footer from "../components/Footer";
 import Service from "../components/Service";
 import Subscribe from "../components/Subscribe";
 import Spinner from "../components/Spinner";
-
-function Home() {
+ 
+function Home({onButtonClick, cssClass}) {
+  
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
@@ -21,18 +22,18 @@ function Home() {
     <div>
       {load ? (
         <div>
-          <Spinner />
+          <Spinner cssClass={cssClass}/>
         </div>
       ) : (
         <div>
-          <Navbar />
-          <Intro />
-          <Service />
-          <AnyIdea />
-          <Subscribe />
-          <Faq />
-          <Footer />
-          <CopyRightBar />
+          <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
+          <Intro cssClass={cssClass} />
+          <Service cssClass={cssClass} />
+          <AnyIdea cssClass={cssClass} />
+          <Subscribe cssClass={cssClass} />
+          <Faq cssClass={cssClass}/>
+          <Footer cssClass={cssClass}/>
+          <CopyRightBar cssClass={cssClass}/>
         </div>
       )}
     </div>

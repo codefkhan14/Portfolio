@@ -1,10 +1,15 @@
 .anyidea {
-  margin: 100px 0;
+  padding-top: 100px;
   width: 100%;
   display: flex;
+  /* background-color: black; */
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.anyidea.darkCss{
+  background-color: black;
+  color: white;
 }
 .idea-details {
   width: 30%;
@@ -22,6 +27,9 @@
   line-height: 23px;
   color: grey;
   letter-spacing: 0.3px;
+}
+.anyidea.darkCss .idea-details p{
+  color: rgb(185, 182, 182);
 }
 .idea-details button {
   padding: 12px 23px;

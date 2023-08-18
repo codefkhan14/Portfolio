@@ -3,10 +3,10 @@ import "./CopyRightBarStyle.css";
 import { GrLinkedinOption, GrFacebookOption } from "react-icons/gr";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
-function CopyRightBar() {
+function CopyRightBar({cssClass}) {
   return (
     <>
-      <section className="copyrightandicon">
+      <section className={`copyrightandicon ${cssClass}`}>
         <div className="copyright">copyright © 2023 | @codefkhan Portfolio</div>
 
         <div className="baricons">

@@ -4,7 +4,11 @@ import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
-function Navbar() {
+// import { click } from '@testng-library/user-event/dist/click';
+function Navbar({onButtonClick, cssClass}) {
+
+//  const [cssClass, setCssClass] = useState('');
+
   const [stickyClass, setStickyClass] = useState('');
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
@@ -18,16 +22,20 @@ function Navbar() {
   
     }
   };
-
-
-
-
-
   const [clickMode, setModeClick] = useState(false);
-  const ClickModeIcons = () => {
-    setModeClick(!clickMode);
+
+
+
+
+
+  // const ClickModeIcons = () => {
+  //  if(cssClass ==='')
+  //  setCssClass('newClass');
+  // else
+  // setCssClass('')
+  //   setModeClick(!clickMode);
     
-  };
+  // };
 
 
   const [clickMenu, setClickMenu] = useState(false);
@@ -38,20 +46,21 @@ function Navbar() {
 
   return (
     <>
-      <section className={`main-navbar ${stickyClass}`}>
+      <section className={`main-navbar  ${stickyClass}  ${cssClass}`}>
         <h2 className="navbarname">
           <Link to="/">Furkan</Link>
         </h2>
 
         <div className="main-nav">
-          <ul className={clickMenu ? "navbanner active" : "navbanner"}>
+          <ul className={clickMenu ? `navbanner ${cssClass} active` : `navbanner ${cssClass}`}>
+          {/* <ul className={clickMenu ? "navbanner active" : "navbanner"}> */}
           
             <li>
               <Link className="active" to="/">Home</Link>
             </li>
 
             <li>
-              <Link to="/Project">Projects</Link>
+              <Link  to="/Project">Projects</Link>
             </li>
             <li>
               <Link to="/Skills">Skills</Link>
@@ -63,15 +72,15 @@ function Navbar() {
               <Link to="/Contact">Contact Me</Link>
             </li>
           </ul>
-          <div className="navIcons">
+          <div className={`navIcons ${cssClass}`}>
 
-            <i className="modeIcon" onClick={ClickModeIcons}>
+            <i className="modeIcon" onClick={onButtonClick}>
               
               {clickMode ? <BsFillSunFill /> : <BsFillMoonFill />}
 
             </i>
 
-            <i className="modeIcon modeMenu" onClick={ClickMenuIcons}>
+            <i className="MenuIcon" onClick={ClickMenuIcons}>
               
               {clickMenu ? <GrClose /> : <CiMenuFries />}
             </i>

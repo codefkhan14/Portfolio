@@ -6,19 +6,22 @@
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  transition: 0.9s;
 }
+
 .sticky-nav-come {
   position: fixed;
   top: 0;
   padding: 0 150px;
-  background-image: url("https://i.stack.imgur.com/HCfU2.png");
+  background-color: white;
   box-shadow: 0px 0px 7px black;
   z-index: 10;
-  transition: 0.9s;
   left: 0;
 }
-.main-navbar.active {
+
+.main-navbar.darkCss {
+  background-color: black;
+}
+.sticky-nav-come.darkCss {
   background-color: black;
 }
 
@@ -79,23 +82,22 @@
   transform: 0.3s ease;
   background-color: rgb(150, 150, 150);
 }
-
-.navIcons.active i {
+.navbanner.darkCss li a {
   color: white;
 }
 
-.modeIcon {
+.navIcons i {
+  color: rgb(16, 1, 1);
   font-size: 20px;
   padding: 10px;
-  color: black;
-
   cursor: pointer;
 }
-.modeMenu {
-  display: none;
+.navIcons.darkCss i {
+  color: rgb(243, 224, 224);
 }
-.modeIcon:hover {
-  color: rgb(81, 81, 81);
+
+.MenuIcon{
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -135,7 +137,7 @@
     width: 40px;
     bottom: 14px;
   }
-  .modeMenu {
+  .MenuIcon {
     display: initial;
   }
   .navIcons i {

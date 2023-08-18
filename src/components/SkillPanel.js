@@ -1,8 +1,10 @@
 import React from 'react'
 import './SkillPanelStyle.css'
-function SkillPanel() {
+function SkillPanel({cssClass}) {
   return (
     <>
+    <div className={`top-skill-panel ${cssClass}`}>
+      
         <div className="skill-panel">
     <h2>My Skills</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reiciendis!</p>
@@ -45,6 +47,8 @@ function SkillPanel() {
         </div>
       </div>
 
+    </div>
+    
     </div>
     </>
   )

@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import CopyRightBar from "../components/CopyRightBar";
 import ContactDetail from "../components/ContactDetail";
 import Spinner from "../components/Spinner";
-function Contact() {
+function Contact({onButtonClick, cssClass}) {
   const [load, setLoad] = useState(true);
-
+ 
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
@@ -17,16 +17,16 @@ function Contact() {
     <div>
       {load ? (
         <div>
-          <Navbar />
-          <Spinner />
+          <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar />
-          <AboutPanel title="Contact us" />
-          <ContactDetail />
-          <Footer />
-          <CopyRightBar />
+          <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <AboutPanel title="Contact us" cssClass={cssClass}/>
+          <ContactDetail cssClass={cssClass}/>
+          <Footer cssClass={cssClass}/>
+          <CopyRightBar cssClass={cssClass}/>
         </div>
       )}
     </div>

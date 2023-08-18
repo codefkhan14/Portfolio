@@ -1,8 +1,11 @@
 .footer {
   max-width: 100%;
   background-color: rgb(18, 18, 18);
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0;
   color: rgb(213, 213, 213);
+}
+.footer.darkCss{
+  background-color: black;
 }
 .footer-container {
   max-width: 1140px;

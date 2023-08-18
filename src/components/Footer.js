@@ -3,9 +3,9 @@ import "./FooterStyle.css";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 // import { IoLocationSharp } from "react-icons/iol";
-function Footer() {
+function Footer({cssClass}) {
   return (
-    <div className="footer">
+    <div className={`footer ${cssClass}`}>
       <div className="footer-container">
         <div className="lefty">
           <div className="location">

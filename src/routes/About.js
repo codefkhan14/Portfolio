@@ -7,11 +7,11 @@ import Footer from "../components/Footer";
 import CopyRightBar from "../components/CopyRightBar";
 import Subscribe from "../components/Subscribe";
 import AnyIdea from "../components/AnyIdea";
+
 import Spinner from "../components/Spinner";
 
-function About() {
-  const [load, setLoad] = useState(true);
-
+function About({onButtonClick, cssClass}) {
+ const [load, setLoad] = useState(true)
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
@@ -21,19 +21,19 @@ function About() {
     <div>
       {load ? (
         <div>
-          <Navbar />
-          <Spinner />
+           <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar />
-          <AboutPanel title="ABOUT ME" />
-          <AboutPage />
-          <Service />
-          <Subscribe />
-          <AnyIdea />
-          <Footer />
-          <CopyRightBar />
+          <Navbar onButtonClick={onButtonClick} cssClass={cssClass}/>
+          <AboutPanel title="ABOUT ME" cssClass={cssClass} />
+          <AboutPage cssClass={cssClass}/>
+          <Service cssClass={cssClass}/>
+          <Subscribe cssClass={cssClass}/>
+          <AnyIdea cssClass={cssClass}/>
+          <Footer cssClass={cssClass}/>
+          <CopyRightBar cssClass={cssClass}/>
         </div>
       )}
     </div>

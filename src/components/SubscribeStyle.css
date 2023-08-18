@@ -1,6 +1,12 @@
+.top-subscribe {
+  padding-top: 200px;
+}
+.top-subscribe.darkCss {
+  background-color: black;
+}
 .subscribe {
   max-width: 800px;
-  margin:  150px auto;
+  margin: auto auto;
   background-image: linear-gradient(
     to right,
     rgb(39, 39, 239),
@@ -12,7 +18,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   text-align: center;
   justify-content: center;
 }
@@ -53,105 +59,91 @@
   padding: 10px 35px;
   margin: 10px 0;
 }
-.subscribe button:hover{
+.subscribe button:hover {
   color: white;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .subscribe {
     max-width: 600px;
-    margin:  150px auto;
+    margin: 150px auto;
     height: 45vh;
-   
   }
   .subscribe h2 {
     font-size: 28px;
     letter-spacing: 0.5px;
-  
   }
   .subscribe p {
     margin-bottom: 45px;
     margin-top: 5px;
-   font-size: 15px;
+    font-size: 15px;
   }
   .subscribe input {
     width: 90%;
-  
+
     padding: 8px 14px;
-   
   }
   .subscribe button {
     padding: 10px 30px;
     font-size: 15px;
     margin: 4px 0;
     letter-spacing: 0.4px;
-    
   }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .subscribe {
     max-width: 400px;
-    margin:  150px auto;
+    margin: 150px auto;
     height: 35vh;
-   
   }
   .subscribe h2 {
     font-size: 20px;
     letter-spacing: 0.3px;
-  
   }
   .subscribe p {
     margin-bottom: 20px;
     margin-top: 5px;
-   font-size: 11px;
+    font-size: 11px;
   }
   .subscribe input {
     width: 75%;
-  
+
     padding: 3px 14px;
-   
   }
   .subscribe button {
     padding: 8px 25px;
     font-size: 12px;
     margin: 0px 0;
     letter-spacing: 0.2px;
-    
   }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .subscribe {
     max-width: 300px;
-    margin:  150px auto;
+    margin: 150px auto;
     height: 25vh;
-   
   }
   .subscribe h2 {
     font-size: 15px;
     letter-spacing: 0.1px;
-  
   }
   .subscribe p {
     margin-bottom: 15px;
     margin-top: 2px;
-   font-size: 8px;
+    font-size: 8px;
   }
   .subscribe input {
     width: 70%;
-  
+
     padding: 1px 14px;
-   
   }
   .subscribe button {
     padding: 6px 20px;
     font-size: 10px;
     margin: 0px 0;
     letter-spacing: 0.1px;
-    
   }
   .subscribe input::placeholder {
     font-size: 12px;
-   
   }
-
 }

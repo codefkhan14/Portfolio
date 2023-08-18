@@ -1,10 +1,11 @@
 import React from "react";
 import Loader from "../spinner.gif";
 import "./Spinner.css";
-function Spinner() {
+function Spinner({cssClass}) {
   return (
-    <div>
+    <div className={`spinner ${cssClass}`}>
       <img src={Loader} alt="error" className="spinner-img" />
+      <span>Loading...</span>
     </div>
   );
 }

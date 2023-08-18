@@ -1,14 +1,18 @@
 .copyrightandicon {
   display: flex;
   background-color: rgb(18, 18, 18);
+  /* background-color: black; */
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
   height: 70px;
+
   flex-wrap: wrap;
   width: 100%;
 }
-
+.copyrightandicon.darkCss{
+  background-color: black;
+}
 .baricons {
   display: flex;
   align-items: center;

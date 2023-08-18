@@ -2,10 +2,14 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  margin: 150px 0;
+  padding: 150px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contactDetail.darkCss{
+  background-color: black;
+  color: white;
 }
 .contactDetail h2 {
   font-size: 35px;

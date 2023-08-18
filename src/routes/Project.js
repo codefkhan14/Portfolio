@@ -7,8 +7,9 @@ import Subscribe from "../components/Subscribe";
 import AnyIdea from "../components/AnyIdea";
 import ProjectPanel from "../components/ProjectPanel";
 import Spinner from "../components/Spinner";
+ 
+function Project({onButtonClick, cssClass}) {
 
-function Project() {
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
@@ -20,18 +21,18 @@ function Project() {
     <div>
       {load ? (
         <div>
-          <Navbar />
-          <Spinner />
+            <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar />
-          <AboutPanel title="PROJECTS" />
-          <ProjectPanel />
-          <Subscribe />
-          <AnyIdea />
-          <Footer />
-          <CopyRightBar />
+          <Navbar onButtonClick={onButtonClick} cssClass={cssClass}/>
+          <AboutPanel title="PROJECTS" cssClass={cssClass}/>
+          <ProjectPanel cssClass={cssClass}/>
+          <Subscribe cssClass={cssClass}/>
+          <AnyIdea cssClass={cssClass}/>
+          <Footer cssClass={cssClass}/>
+          <CopyRightBar cssClass={cssClass}/>
         </div>
       )}
     </div>

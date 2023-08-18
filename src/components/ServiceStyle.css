@@ -1,6 +1,11 @@
 .service {
-  margin: 150px 0;
+  padding-top: 150px;
+  /* background-color: black; */
   text-align: center;
+}
+.service.darkCss{
+  background-color: black;
+
 }
 .service h2 {
   font-size: 33px;
@@ -8,12 +13,18 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.service.darkCss h2{
+  color: white;
+}
 .service p {
   margin-top: 17px;
   font-size: 15px;
   color: rgb(96, 96, 96);
   line-height: 20px;
   letter-spacing: 0.3px;
+}
+.service.darkCss p{
+  color: rgb(185, 182, 182);
 }
 .service-item {
   display: flex;
@@ -33,6 +44,10 @@
   background-color: rgb(224, 224, 224);
   transition: 0.6s;
 }
+.service.darkCss .service-item1{
+  box-shadow: 10px 10px 30px 0px rgb(30, 25, 25);
+  background-color: black;
+}
 .service-item1:hover {
   box-shadow: 10px 10px 25px 0px grey;
   transition: 0.6s;
@@ -45,12 +60,18 @@
   font-size: 21px;
   font-weight: bold;
 }
+.service.darkCss .service-detail h3{
+  color: white;
+}
 .service-detail p {
   margin-top: 14px;
   color: rgb(136, 132, 132);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.6px;
+}
+.service.darkCss .service-detail p {
+  color: rgb(185, 182, 182);
 }
 
 @media screen and (max-width: 650px) {

@@ -2,10 +2,10 @@ import React from "react";
 import "./ProjectPanelStyle.css";
 import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
-function ProjectPanel() {
+function ProjectPanel({cssClass}) {
   return (
     <>
-      <div className="project-panel">
+      <div className={`project-panel ${cssClass}`}>
         <h2 style={{ textAlign: "center" }}>Our Project</h2>
         <p style={{ textAlign: "center" }}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum,

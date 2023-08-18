@@ -1,10 +1,10 @@
 import React from "react";
 import "./AnyIdeaStyle.css";
 import { Link } from "react-router-dom";
-function AnyIdea() {
+function AnyIdea({cssClass}) {
   return (
     <>
-      <div className="anyidea">
+      <div className={`anyidea ${cssClass}`}>
         <div className="idea-imgg">
           <img
             src="https://themewagon.github.io/satner/img/banner/home-right.png"

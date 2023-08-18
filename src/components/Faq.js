@@ -2,9 +2,9 @@ import React from "react";
 import "./FaqStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-function Faq() {
+function Faq({cssClass}) {
   return (
-    <div className="accordion accordion-flush" id="accordionFlushExample">
+    <div className={`accordion accordion-flush ${cssClass}`} id="accordionFlushExample">
       <h1>FAQ</h1>
 
       <p>

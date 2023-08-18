@@ -1,10 +1,13 @@
 import React from 'react'
 import './AboutPanelStyle.css'
-function AboutPanel(props) {
+function AboutPanel({title, cssClass}) {
   return (
     <>
+    <div className={`top-aboutPanel ${cssClass}`}>
+
       <div className="aboutPanel">
-      <h2>{props.title}</h2>
+      <h2>{title}</h2>
+    </div>
     </div>
     </>
   )

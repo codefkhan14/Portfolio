@@ -1,21 +1,31 @@
 .accordion {
-  /* text-align: center; */
-  margin: 100px 0;
+  padding-top: 100px;
 }
+.accordion.darkCss {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+}
+
 .accordion h1 {
   margin-top: 30px;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
-
+}
+.accordion.darkCss h1 {
+  color: white;
 }
 .accordion p {
   margin: 20px 0 40px 0;
   text-align: center;
   color: rgb(118, 114, 114);
 }
+.accordion.darkCss p {
+  color: rgb(185, 182, 182);
+}
 .accordion-item {
   margin: 20px 0;
+  background-color: black;
 }
 .accordion-body strong {
   color: rgb(76, 76, 245);
@@ -23,18 +33,19 @@
 .accordion-body {
   color: rgb(154, 154, 154);
 }
-@media screen and (max-width:550px) {
+.accordion.darkCss .accordion-body {
+  background-color: black;
+}
+@media screen and (max-width: 550px) {
   .accordion h1 {
     margin-top: 30px;
-   font-size: 22px;
-   
+    font-size: 22px;
   }
   .accordion p {
     margin: 10px 0 40px 0;
-   font-size: 12px;
+    font-size: 12px;
   }
   .accordion-body {
     font-size: 10px;
   }
-  
 }

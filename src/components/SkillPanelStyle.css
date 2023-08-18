@@ -1,14 +1,27 @@
+
+.top-skill-panel.darkCss{
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+
+}
 .skill-panel {
   position: relative;
   max-width: 700px;
   width: 100%;
   background-color: transparent;
-  margin: 190px auto;
+  margin: 150px auto 0 auto;
   padding: 10px 20px;
   border-radius: 7px;
 }
+.top-skill-panel.darkCss .skill-panel h2{
+
+  color: white;
+}
+.top-skill-panel.darkCss .skill-panel p{
+  color: rgb(185, 182, 182);
+}
 .skill-panel .skill-box {
-  width: 100%;
+  width: 100%; 
   margin: 25px 0;
 }
 .skill-box .skill-title {
@@ -16,6 +29,9 @@
   font-size: 14px;
   font-weight: 600;
   color: #333;
+}
+.top-skill-panel.darkCss .skill-box .skill-title{
+  color: white;
 }
 .skill-box .skill-bar {
   height: 8px;

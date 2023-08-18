@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutPage.css";
-function AboutPage() {
+function AboutPage({cssClass}) {
   return (
     <>
-      <div className="About-page-intro">
+      <div className={`About-page-intro ${cssClass}`}>
        
         <div className="About-page-right">
           <div className="About-page-img-stack">

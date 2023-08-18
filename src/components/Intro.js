@@ -1,10 +1,11 @@
 import React from "react";
 import "./IntroStyle.css";
 import { Link } from "react-router-dom";
-function Intro(props) {
+function Intro({cssClass}) { 
+
   return (
     <>
-      <div className= "intro">
+      <div className= {`intro ${cssClass}`}>
         <div className="left">
           <h2>Hey 🖐️! MD FURKAN</h2>
           <h1>

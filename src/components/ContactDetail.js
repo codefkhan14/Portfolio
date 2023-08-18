@@ -1,10 +1,10 @@
 import React from 'react'
 import './ContactDetailStyle.css'
 
-function ContactDetail() {
+function ContactDetail({cssClass}) {
   return (
     <>
-       <div className="contactDetail">
+       <div className={`contactDetail ${cssClass}`}>
       <h2>Get In Touch</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic?
