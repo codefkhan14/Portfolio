@@ -5,7 +5,8 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 // import { IoLocationSharp } from "react-icons/iol";
 function Footer({cssClass}) {
   return (
-    <div className={`footer ${cssClass}`}>
+    <div className={`top-footer ${cssClass}`}>
+    <div className="footer">
       <div className="footer-container">
         <div className="lefty">
           <div className="location">
@@ -46,6 +47,7 @@ function Footer({cssClass}) {
             ad impedit.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

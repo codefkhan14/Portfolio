@@ -1,10 +1,14 @@
+.top-footer{
+  /* border: 2px solid red; */
+  background-color: rgb(18, 18, 18);
+}
 .footer {
   max-width: 100%;
-  background-color: rgb(18, 18, 18);
-  padding: 4rem 0 4rem 0;
+  padding: 5rem 0 4rem 0;
   color: rgb(213, 213, 213);
 }
-.footer.darkCss{
+.top-footer.darkCss {
+  border: 2px solid black;
   background-color: black;
 }
 .footer-container {
@@ -40,11 +44,9 @@
   color: rgb(197, 197, 197);
   text-decoration: none;
 }
-.location a:hover{
+.location a:hover {
   text-decoration: underline;
   color: rgb(156, 156, 156);
-  
-
 }
 .location h4 {
   font-size: 1rem;
@@ -68,11 +70,17 @@
 }
 
 @media screen and (max-width: 640px) {
+  .footer{
+    margin-top:10vw;
+  }
   .footer-container {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 400px) {
+  .footer{
+    margin-top:15vw;
+  }
   .footer-container {
     grid-template-columns: 1fr;
   }

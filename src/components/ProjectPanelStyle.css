@@ -1,5 +1,5 @@
 .project-panel {
-  padding-top: 120px;
+  padding-top: 10vw;
   
 }
 .project-panel.darkCss{
@@ -17,6 +17,7 @@
 .project-panel p {
   color: grey;
   font-size: 15px;
+  padding: 0 20px;
   margin-bottom: 70px;
   letter-spacing: 0.4;
 }
@@ -91,8 +92,13 @@
   .project-panel-detail {
     width: 40%;
   }
+
 }
 @media screen and (max-width: 670px) {
+  .project-panel {
+    padding-top: 15vw;
+    
+  }
   .project-panel-img {
     display: none;
 

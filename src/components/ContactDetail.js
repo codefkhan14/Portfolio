@@ -4,7 +4,10 @@ import './ContactDetailStyle.css'
 function ContactDetail({cssClass}) {
   return (
     <>
-       <div className={`contactDetail ${cssClass}`}>
+       <div className={`top-contact-detail ${cssClass}`}>
+    <div className="contactDetail">
+
+
       <h2>Get In Touch</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic?
@@ -24,6 +27,7 @@ function ContactDetail({cssClass}) {
         </div>
         <button className='all-btn'>Submit</button>
       </form>
+    </div>
     </div>
     </>
   )
