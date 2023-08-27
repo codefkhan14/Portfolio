@@ -4,7 +4,18 @@ A Portfolio website using react and some bootstrap functionality.
 
 # [visit the site](https://codefkhan14.github.io/Portfolio/)
 
-## Available Scripts
+## Technologies Used
+- React.js
+- Bootstrap
+- HTML5
+- CSS3
+
+## Contributing
+
+If you'd like to contribute to this project, you can:
+
+- Open issues for any bugs or feature requests.
+- Fork the repository, make changes, and submit a pull request for review.
 
 In the project directory, you can run:
 
