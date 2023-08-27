@@ -1,5 +1,5 @@
 import React from "react";
-import "./CopyRightBarStyle.css";
+import "../styles/CopyRightBar.css";
 import { GrLinkedinOption, GrFacebookOption } from "react-icons/gr";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./FaqStyle.css";
+import "../styles/Faq.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 function Faq({cssClass}) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './SkillPanelStyle.css'
+import '../styles/SkillPanel.css'
 function SkillPanel({cssClass}) {
   return (
     <>

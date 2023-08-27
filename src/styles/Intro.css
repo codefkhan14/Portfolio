@@ -7,7 +7,7 @@
   height: 100%;
   padding-top: 50px;
 }
-.intro.darkCss{
+.intro.darkCss {
   background-color: black;
   color: white;
 }
@@ -38,17 +38,19 @@
   letter-spacing: 0.2px;
   color: rgb(99, 98, 98);
 }
-.intro.darkCss .left p{
+.intro.darkCss .left p {
   color: rgb(185, 182, 182);
 }
 .left a button {
-  margin:20px 4px 0 4px;
+  margin: 20px 4px 0 4px;
   padding: 12px 30px;
   font-size: 14px;
   font-weight: bold;
- 
 }
+.intro-btn.darkCss:hover{
+  color: white;
 
+}
 
 .intro .right {
   max-width: 700px;

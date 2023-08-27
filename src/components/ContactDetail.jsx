@@ -1,5 +1,5 @@
 import React from 'react'
-import './ContactDetailStyle.css'
+import '../styles/ContactDetail.css'
 
 function ContactDetail({cssClass}) {
   return (
@@ -25,7 +25,7 @@ function ContactDetail({cssClass}) {
         <div className="input-group">
           <textarea rows="8" placeholder="Message" required></textarea>
         </div>
-        <button className='all-btn'>Submit</button>
+        <button className={`all-btn ${cssClass}`}>Submit</button>
       </form>
     </div>
     </div>

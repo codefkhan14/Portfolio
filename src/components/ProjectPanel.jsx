@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectPanelStyle.css";
+import "../styles/ProjectPanel.css";
 import { FiExternalLink } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 function ProjectPanel({cssClass}) {

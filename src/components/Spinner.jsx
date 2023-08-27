@@ -1,6 +1,6 @@
 import React from "react";
 import Loader from "../spinner.gif";
-import "./Spinner.css";
+import "../styles/Spinner.css";
 function Spinner({cssClass}) {
   return (
     <div className={`spinner ${cssClass}`}>

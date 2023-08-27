@@ -1,5 +1,5 @@
 import React from "react";
-import "./AnyIdeaStyle.css";
+import "../styles/AnyIdea.css";
 import { Link } from "react-router-dom";
 function AnyIdea({cssClass}) {
   return (
@@ -18,7 +18,7 @@ function AnyIdea({cssClass}) {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
             hic illo ullam architecto quibusdam!
           </p>
-        <Link to="/Contact"><button className="all-btn">CONTACT ME</button></Link>  
+        <Link to="/Contact"><button className={`all-btn ${cssClass}`}>contact me</button></Link>  
         </div>
       </div>
     </>

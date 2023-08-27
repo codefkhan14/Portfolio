@@ -1,5 +1,5 @@
 import React from "react";
-import "./SubscribeStyle.css";
+import "../styles/Subscribe.css";
 
 function Subscribe({cssClass}) {
   return (

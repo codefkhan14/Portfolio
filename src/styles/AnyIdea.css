@@ -35,6 +35,9 @@
   margin-top: 20px;
   font-size: 13px;
 }
+.idea-details button.darkCss:hover{
+  color: white;
+}
 
 .idea-img {
   width: 250px;

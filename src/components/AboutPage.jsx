@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutPage.css";
+import "../styles/AboutPage.css";
 function AboutPage({cssClass}) {
   return (
     <>
@@ -19,14 +19,14 @@ function AboutPage({cssClass}) {
         <div className="About-page-left">
           <h2>About me</h2>
         
-          <p>
+          <p> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             saepe perspiciatis fuga error reprehenderit cumque soluta
             provclassNameent placeat ratione eius!
 <br />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam delectus fugit facere recusandae architecto aliquam consequuntur libero dolorum magnam dolores.
           </p>
-        <a href="/Project"> <button className="all-btn">get cv</button></a> 
+        <a href="/Project"> <button className={`all-btn ${cssClass}`}>get cv</button></a> 
         </div>
 
       </div>

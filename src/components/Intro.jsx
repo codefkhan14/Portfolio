@@ -1,5 +1,5 @@
 import React from "react";
-import "./IntroStyle.css";
+import "../styles/Intro.css";
 import { Link } from "react-router-dom";
 function Intro({cssClass}) { 
 
@@ -15,9 +15,9 @@ function Intro({cssClass}) {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             saepe perspiciatis fuga error reprehenderit cumque soluta
             provclassNameent placeat ratione eius!
-          </p>
-        <Link to="/Contact"> <button className="intro-btn all-btn">hire me</button></Link> 
-        <Link to="https://drive.google.com/file/d/1bfFHQqPvak80fwmjSPxIFrYuDDuvvXKY/view?usp=drive_link" target="_blank" rel="noreferrer"> <button className="intro-btn all-btn">get cv</button></Link> 
+          </p> 
+        <Link to="/Contact"> <button className={`intro-btn all-btn ${cssClass}`}>hire me</button></Link> 
+        <Link to="https://drive.google.com/file/d/1bfFHQqPvak80fwmjSPxIFrYuDDuvvXKY/view?usp=drive_link" target="_blank" rel="noreferrer"> <button className={`intro-btn all-btn ${cssClass}`}>get cv</button></Link> 
         </div>
 
         <div className="right">

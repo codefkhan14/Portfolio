@@ -1,8 +1,7 @@
 import React from "react";
-import "./FooterStyle.css";
+import "../styles/Footer.css";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-// import { IoLocationSharp } from "react-icons/iol";
 function Footer({cssClass}) {
   return (
     <div className={`top-footer ${cssClass}`}>

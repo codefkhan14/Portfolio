@@ -1,5 +1,5 @@
 import React from 'react'
-import './AboutPanelStyle.css'
+import '../styles/AboutPanel.css'
 function AboutPanel({title, cssClass}) {
   return (
     <>

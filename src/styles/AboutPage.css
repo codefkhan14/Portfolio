@@ -40,6 +40,11 @@
   margin: 25px 4px 0 4px;
   padding: 12px 30px;
 }
+.About-page-left a button.darkCss:hover{
+  color: white;
+
+}
+
 
 .About-page-intro .About-page-right {
   max-width: 700px;
