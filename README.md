@@ -1,6 +1,8 @@
 # A Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Portfolio website using react and some bootstrap functionality.
+
+[visit the site](https://codefkhan14.github.io/Portfolio/)
 
 ## Available Scripts
 
