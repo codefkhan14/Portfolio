@@ -2,7 +2,15 @@
 
 A Portfolio website using react and some bootstrap functionality.
 
-# [visit the site](https://codefkhan14.github.io/Portfolio/)
+# [Visit the site](https://codefkhan14.github.io/Portfolio/)
+
+## Features
+
+- Display projects with descriptions, images, and links
+- Showcase skills and achievements
+- Contact form for users to get in touch
+- Responsive design for optimal viewing on various devices
+- Utilizes Bootstrap for styling and layout
 
 ## Technologies Used
 - React.js
