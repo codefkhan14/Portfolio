@@ -12,9 +12,7 @@ function Intro({cssClass}) {
             I am a <span>Full Stack Developer</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            saepe perspiciatis fuga error reprehenderit cumque soluta
-            provclassNameent placeat ratione eius!
+          I'm a passionate Computer Science undergrad aspiring to excel as a software developer. With a focus on web development, competitive programming, and open source, I'm building a strong foundation. Blend technical skills with problem-solving, engage in projects and collaboration, and my journey will lead to success.
           </p> 
         <Link to="/Contact"> <button className={`intro-btn all-btn ${cssClass}`}>hire me</button></Link> 
         <Link to="https://drive.google.com/file/d/1bfFHQqPvak80fwmjSPxIFrYuDDuvvXKY/view?usp=drive_link" target="_blank" rel="noreferrer"> <button className={`intro-btn all-btn ${cssClass}`}>get cv</button></Link> 

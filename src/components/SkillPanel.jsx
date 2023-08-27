@@ -7,7 +7,7 @@ function SkillPanel({cssClass}) {
       
         <div className="skill-panel">
     <h2>My Skills</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reiciendis!</p>
+    <p>These are my skills on the basis of which i have made projects.</p>
 
       <div className="skill-box">
         <span className="skill-title">HTML</span>

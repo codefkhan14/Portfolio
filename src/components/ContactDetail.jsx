@@ -10,7 +10,7 @@ function ContactDetail({cssClass}) {
 
       <h2>Get In Touch</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic?
+        If you have any queries feel free to contact us, we will be more tha happy to.
       </p>
       <form>
         <div className="input-group">

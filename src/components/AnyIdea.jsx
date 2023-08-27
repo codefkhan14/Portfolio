@@ -15,8 +15,7 @@ function AnyIdea({cssClass}) {
         <div className="idea-details">
           <h3>Have Any Project In Your Mind </h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-            hic illo ullam architecto quibusdam!
+           If You have any interesting projects idea in your mind please feel free to contact us.
           </p>
         <Link to="/Contact"><button className={`all-btn ${cssClass}`}>contact me</button></Link>  
         </div>
