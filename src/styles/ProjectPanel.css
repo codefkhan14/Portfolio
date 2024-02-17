@@ -1,6 +1,7 @@
 .project-panel {
   padding-top: 5vw;
 }
+
 .projects-list {
   padding: 150px 50px;
   display: flex;
@@ -8,6 +9,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .project-panel.darkCss {
   background-color: black;
   border: 2px solid black;
@@ -22,6 +24,7 @@
   margin-top: 50px;
   letter-spacing: 0.7px;
 }
+
 .project-p {
   text-align: center;
   padding: 5px 340px;
@@ -31,14 +34,17 @@
   width: 18rem;
   margin: 15px 10px;
 }
+
 .card-body.darkCss {
   background-color: black;
 }
+
 .project-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .project-btn a {
   padding: 5px 10px;
   letter-spacing: 0.5px;
@@ -47,33 +53,39 @@
   transition: 0.6s;
   border: 1px solid rgb(39, 39, 239);
 }
+
 .project-btn a:hover {
   background-color: rgb(56, 56, 239);
 }
+
 .card img {
   height: 180px;
 }
 
 @media screen and (max-width:1100px) {
-.projects-list {
+  .projects-list {
     padding: 100px 50px;
-    
+
   }
+
   .project-p {
-  padding: 5px 140px;
+    padding: 5px 140px;
+  }
 }
-}
+
 @media screen and (max-width:800px) {
   .projects-list {
     padding: 50px 50px;
-    
+
   }
+
   .project-p {
-  padding: 5px 60px;
+    padding: 5px 60px;
+  }
 }
-}
+
 @media screen and (max-width:550px) {
   .project-p {
-  padding: 5px 20px;
-}
+    padding: 5px 20px;
+  }
 }
