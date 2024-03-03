@@ -14,8 +14,8 @@ function Footer({ cssClass }) {
                 <MdLocationOn />
               </i>
               <div>
-                <p>Sikar, Rajasthan</p>
-                <p>india - 332001</p>
+                <p>New Delhi, Delhi</p>
+                <p>india - 110067</p>
               </div>
             </div>
             <div className="location">
@@ -24,7 +24,7 @@ function Footer({ cssClass }) {
                 <BsTelephoneFill />
               </i>
               <div>
-                <h4>+91-9571604650</h4>
+                <h4>+91 9571604650</h4>
               </div>
             </div>
             <div className="location">
@@ -38,7 +38,7 @@ function Footer({ cssClass }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  furkarangrej200@gmail.com
+                  work.furkan14@gmail.com
                 </a>
               </div>
             </div>

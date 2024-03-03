@@ -9,9 +9,13 @@ import Subscribe from "../components/Subscribe";
 import AnyIdea from "../components/AnyIdea";
 
 import Spinner from "../components/Spinner";
+import { useLocation } from "react-router-dom";
 
-function About({onButtonClick, cssClass}) {
- const [load, setLoad] = useState(true)
+function About({ onButtonClick, cssClass }) {
+  const location = useLocation();
+  if (location.pathname === "/About") document.title = "About - Furkan";
+
+  const [load, setLoad] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
@@ -21,19 +25,19 @@ function About({onButtonClick, cssClass}) {
     <div>
       {load ? (
         <div>
-           <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Navbar cssClass={cssClass} onButtonClick={onButtonClick} />
           <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar onButtonClick={onButtonClick} cssClass={cssClass}/>
+          <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
           <AboutPanel title="ABOUT ME" cssClass={cssClass} />
-          <AboutPage cssClass={cssClass}/>
-          <Service cssClass={cssClass}/>
-          <Subscribe cssClass={cssClass}/>
-          <AnyIdea cssClass={cssClass}/>
-          <Footer cssClass={cssClass}/>
-          <CopyRightBar cssClass={cssClass}/>
+          <AboutPage cssClass={cssClass} />
+          <Service cssClass={cssClass} />
+          <Subscribe cssClass={cssClass} />
+          <AnyIdea cssClass={cssClass} />
+          <Footer cssClass={cssClass} />
+          <CopyRightBar cssClass={cssClass} />
         </div>
       )}
     </div>

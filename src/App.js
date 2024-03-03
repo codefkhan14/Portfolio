@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 
 import Project from "./routes/Project.js";
 import Skills from "./routes/Skills.js";
@@ -16,13 +16,39 @@ function App() {
   };
   return (
     <>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter>
+        {/* <BrowserRouter basename="/Portfolio"> */}
         <Routes>
-          <Route path="/" element={<Home onButtonClick={handleButtonClick} cssClass={cssClass}/>} />
-          <Route path="/About" element={<About onButtonClick={handleButtonClick} cssClass={cssClass}/>} />
-          <Route path="/Contact" element={<Contact onButtonClick={handleButtonClick} cssClass={cssClass}/>} />
-          <Route path="/Project" element={<Project onButtonClick={handleButtonClick} cssClass={cssClass}/>} />
-          <Route path="/Skills" element={<Skills onButtonClick={handleButtonClick} cssClass={cssClass}/>} />
+          <Route
+            path="/"
+            element={
+              <Home onButtonClick={handleButtonClick} cssClass={cssClass} />
+            }
+          />
+          <Route
+            path="/About"
+            element={
+              <About onButtonClick={handleButtonClick} cssClass={cssClass} />
+            }
+          />
+          <Route
+            path="/Contact"
+            element={
+              <Contact onButtonClick={handleButtonClick} cssClass={cssClass} />
+            }
+          />
+          <Route
+            path="/Project"
+            element={
+              <Project onButtonClick={handleButtonClick} cssClass={cssClass} />
+            }
+          />
+          <Route
+            path="/Skills"
+            element={
+              <Skills onButtonClick={handleButtonClick} cssClass={cssClass} />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>

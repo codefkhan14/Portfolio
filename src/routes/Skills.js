@@ -7,31 +7,34 @@ import AnyIdea from "../components/AnyIdea";
 import SkillPanel from "../components/SkillPanel";
 import Service from "../components/Service";
 import Spinner from "../components/Spinner";
-function Skills({onButtonClick, cssClass}) {
-    const [load, setLoad] = useState(true);
-   
+import { useLocation } from "react-router-dom";
+function Skills({ onButtonClick, cssClass }) {
+  const [load, setLoad] = useState(true);
+  const location = useLocation();
+  if (location.pathname === "/Skills") document.title = "Skills - Furkan";
+
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
     }, 1000);
   });
-   return (
+  return (
     <div>
       {load ? (
         <div>
-          <Navbar cssClass={cssClass} onButtonClick={onButtonClick}/>
+          <Navbar cssClass={cssClass} onButtonClick={onButtonClick} />
           <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
-          <Navbar  onButtonClick={onButtonClick} cssClass={cssClass}/>
-           <AboutPanel title="SKILLS" cssClass={cssClass}/>
-         <SkillPanel cssClass={cssClass}/>
+          <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
+          <AboutPanel title="SKILLS" cssClass={cssClass} />
+          <SkillPanel cssClass={cssClass} />
 
-      <Service cssClass={cssClass}/>
-       <AnyIdea cssClass={cssClass}/>
-      <Footer cssClass={cssClass}/>
-     <CopyRightBar cssClass={cssClass}/>
+          <Service cssClass={cssClass} />
+          <AnyIdea cssClass={cssClass} />
+          <Footer cssClass={cssClass} />
+          <CopyRightBar cssClass={cssClass} />
         </div>
       )}
     </div>

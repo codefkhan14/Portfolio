@@ -8,10 +8,12 @@ import Footer from "../components/Footer";
 import Service from "../components/Service";
 import Subscribe from "../components/Subscribe";
 import Spinner from "../components/Spinner";
- 
-function Home({onButtonClick, cssClass}) {
-  
+import { useLocation } from "react-router-dom";
+
+function Home({ onButtonClick, cssClass }) {
   const [load, setLoad] = useState(true);
+  const location = useLocation();
+  if (location.pathname === "/") document.title = "Introduction - Furkan";
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,7 +24,7 @@ function Home({onButtonClick, cssClass}) {
     <div>
       {load ? (
         <div>
-          <Spinner cssClass={cssClass}/>
+          <Spinner cssClass={cssClass} />
         </div>
       ) : (
         <div>
@@ -31,9 +33,9 @@ function Home({onButtonClick, cssClass}) {
           <Service cssClass={cssClass} />
           <AnyIdea cssClass={cssClass} />
           <Subscribe cssClass={cssClass} />
-          <Faq cssClass={cssClass}/>
-          <Footer cssClass={cssClass}/>
-          <CopyRightBar cssClass={cssClass}/>
+          <Faq cssClass={cssClass} />
+          <Footer cssClass={cssClass} />
+          <CopyRightBar cssClass={cssClass} />
         </div>
       )}
     </div>
