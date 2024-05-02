@@ -6,6 +6,7 @@ import Contact from "./routes/Contact.js";
 import About from "./routes/About.js";
 import Home from "./routes/Home.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollTop from "./components/ScrollTop.jsx";
 
 function App() {
   const [cssClass, setCssClass] = useState(""); // State to hold the CSS class
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <BrowserRouter basename="/Portfolio"> */}
+        <ScrollTop />
         <Routes>
           <Route
             path="/"

@@ -2,7 +2,9 @@ import React from "react";
 import "../styles/Intro.css";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
+import Resume from "./MdResume0.0.0.2.pdf";
 function Intro({ cssClass }) {
+  // window.open(Resume)
   return (
     <>
       <div className={`intro ${cssClass}`}>
@@ -37,11 +39,7 @@ function Intro({ cssClass }) {
             {" "}
             <button className={`intro-btn all-btn ${cssClass}`}>hire me</button>
           </Link>
-          <Link
-            to="https://drive.google.com/file/d/1bfFHQqPvak80fwmjSPxIFrYuDDuvvXKY/view?usp=drive_link"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to={Resume} target="_blank" rel="noreferrer">
             {" "}
             <button className={`intro-btn all-btn ${cssClass}`}>get cv</button>
           </Link>

@@ -9,9 +9,8 @@ function ProjectPanel({ cssClass }) {
       <div className={`project-panel ${cssClass}`}>
         <h2>Our Projects</h2>
         <p className="project-p">
-          Here are some of my projects. These projects showcase my work and
-          skills that i've tried to put to use in real world applications. These
-          projects help me learn and grow as a developer.
+          This collection showcases projects highlighting skills and expertise
+          applied in real-world scenarios.
         </p>
         <div className="projects-list">
           <div className="card">
@@ -88,33 +87,11 @@ function ProjectPanel({ cssClass }) {
                   Github
                 </a>
                 <a
-                  href="https://codefkhan14.github.io/Portfolio/"
+                  href="https://furkan-portfolio.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-primary"
                 >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://global.discourse-cdn.com/standard17/uploads/threejs/optimized/3X/a/a/aa87ec7839bcddc55ffeed0fe454ac1d9c8f6ba4_2_1035x646.jpeg"
-              className="card-img-top"
-              alt="Loading..."
-            />
-            <div className={`card-body ${cssClass}`}>
-              <h5 className="card-title">Bandhej Hub</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <div className="project-btn">
-                <a href="/Project" className="btn btn-primary">
-                  Github
-                </a>
-                <a href="/Project" className="btn btn-primary">
                   Live Demo
                 </a>
               </div>
