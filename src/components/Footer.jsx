@@ -47,9 +47,9 @@ function Footer({ cssClass }) {
           <div className="righty">
             <h4>About</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              quidem doloremque aperiam dicta magni quod, error dolore obcaecati
-              ad impedit.
+              I'm an Computer Science Engineering undergrad aspiring to become a
+              skilled software developer. I'm an avid learner and always looking
+              for oppurtunities to increase my skillset.
             </p>
           </div>
         </div>

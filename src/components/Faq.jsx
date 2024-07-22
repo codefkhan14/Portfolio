@@ -2,13 +2,17 @@ import React from "react";
 import "../styles/Faq.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-function Faq({cssClass}) {
+function Faq({ cssClass }) {
   return (
-    <div className={`accordion accordion-flush ${cssClass}`} id="accordionFlushExample">
+    <div
+      className={`accordion accordion-flush ${cssClass}`}
+      id="accordionFlushExample"
+    >
       <h1>FAQ</h1>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, rerum.
+        Explore my portfolio, learn about my skills, and get answers to
+        frequently asked questions about my work, collaborations, and more
       </p>
       <div className="accordion-item">
         <h2 className="accordion-header">
@@ -20,7 +24,7 @@ function Faq({cssClass}) {
             aria-expanded="false"
             aria-controls="flush-collapseOne"
           >
-            What are the main features?
+            How can I contact you?
           </button>
         </h2>
         <div
@@ -30,14 +34,8 @@ function Faq({cssClass}) {
         >
           <div className="accordion-body">
             {" "}
-            <strong>This is the first item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the .accordion-body, though the
-            transition does limit overflow.
+            You can reach me through the contact form on this website or via
+            email at work.furkan14@gmail.com
           </div>
         </div>
       </div>
@@ -52,7 +50,7 @@ function Faq({cssClass}) {
             aria-expanded="false"
             aria-controls="flush-collapseTwo"
           >
-            Do i have to pay again after trial?
+            Can I hire you for a project?
           </button>
         </h2>
         <div
@@ -62,14 +60,8 @@ function Faq({cssClass}) {
         >
           <div className="accordion-body">
             {" "}
-            <strong>This is the first item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the .accordion-body, though the
-            transition does limit overflow.
+            Yes, I'm available for freelance work and collaborations. Please get
+            in touch with me to discuss your project requirements.
           </div>
         </div>
       </div>
@@ -83,7 +75,7 @@ function Faq({cssClass}) {
             aria-expanded="false"
             aria-controls="flush-collapseThree"
           >
-            How can i get started after trial?
+            Are you available for remote work?
           </button>
         </h2>
         <div
@@ -93,14 +85,8 @@ function Faq({cssClass}) {
         >
           <div className="accordion-body">
             {" "}
-            <strong>This is the first item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the .accordion-body, though the
-            transition does limit overflow.
+            Yes, I can work remotely and collaborate with clients from anywhere
+            in the world.
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/Service.css";
 
-function Service({cssClass}) {
+function Service({ cssClass }) {
   return (
     <>
       <div className={`service ${cssClass}`}>
         <h2>Services Offer</h2>
         <p>
           Is give may shall likeness made yielding spirit a itself togeth
-          created after sea 
+          created after sea
         </p>
         <div className="service-item">
           <div className="service-item1">
@@ -19,11 +19,11 @@ function Service({cssClass}) {
             <div className="service-detail">
               <h3>Web Development</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                libero fugiat eaque!
+                We'll work with you to create a website that meets your unique
+                needs and goals.
               </p>
             </div>
-          </div> 
+          </div>
           <div className="service-item1">
             <img
               src="https://themewagon.github.io/satner/img/services/s2.png"
@@ -32,8 +32,8 @@ function Service({cssClass}) {
             <div className="service-detail">
               <h3>UI/UX Design</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                libero fugiat eaque!
+                We'll craft intuitive, visually stunning interfaces that
+                captivate your audience and drive results.
               </p>
             </div>
           </div>
@@ -43,10 +43,10 @@ function Service({cssClass}) {
               alt=""
             />
             <div className="service-detail">
-              <h3>Web Design</h3>
+              <h3>SEO</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                libero fugiat eaque!
+                Boost your online visibility and drive more traffic to your
+                website with our SEO services.
               </p>
             </div>
           </div>
@@ -58,8 +58,8 @@ function Service({cssClass}) {
             <div className="service-detail">
               <h3>E-commerce</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                libero fugiat eaque!
+                Take your online store to the next level with our e-commerce
+                solutions.
               </p>
             </div>
           </div>
