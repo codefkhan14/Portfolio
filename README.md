@@ -17,6 +17,7 @@ A Portfolio website using react and some bootstrap functionality.
 - Bootstrap
 - HTML5
 - CSS3
+- Tailwind
 
 ## Contributing
 
