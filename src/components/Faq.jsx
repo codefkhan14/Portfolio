@@ -10,7 +10,7 @@ function Faq({ cssClass }) {
     >
       <h1>FAQ</h1>
 
-      <p>
+      <p className="text-[#252525]">
         Explore my portfolio, learn about my skills, and get answers to
         frequently asked questions about my work, collaborations, and more
       </p>

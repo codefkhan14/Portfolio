@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import Project from "./routes/Project.js";
-import Skills from "./routes/Skills.js";
-import Contact from "./routes/Contact.js";
-import About from "./routes/About.js";
-import Home from "./routes/Home.js";
+import Project from "./routes/Project.jsx";
+import Skills from "./routes/Skills.jsx";
+import Contact from "./routes/Contact.jsx";
+import About from "./routes/About.jsx";
+import Home from "./routes/Home.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollTop from "./components/ScrollTop.jsx";
 

@@ -1,19 +1,33 @@
 import React from "react";
-import "../styles/Subscribe.css";
 
-function Subscribe({ cssClass }) {
+function Subscribe() {
   return (
     <>
-      <div className={`top-subscribe ${cssClass}`}>
-        <div className={`subscribe ${cssClass}`}>
-          <h2>get update from anywhere</h2>
-          <p>Stay connected and receive updates from anywhere</p>
-          <form>
-            <div className="pro-subscribe">
-              <input type="email" required placeholder="Email" />
-            </div>
-            <button className="all-btn">Submit</button>
-          </form>
+      <div className="bg-custom-gradient py-16 px-[150px] mt-32">
+        <div className="flex justify-between items-center ">
+          {/* left   */}
+          <div>
+            <h1 className="font-bold text-4xl text-white">Stay Connected!</h1>
+            <p className="text-white">
+              Stay connected and receive updates from anywhere
+            </p>
+          </div>
+          {/* right  */}
+          <div>
+            <form className="flex justify-center items-center gap-2">
+              <div className="">
+                <input
+                  type="email"
+                  required
+                  placeholder="Email"
+                  className="p-2 rounded-md w-[300px]"
+                />
+              </div>
+              <div>
+                <button className="all-btn">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </>

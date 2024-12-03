@@ -1,10 +1,11 @@
 import React from "react";
-import "../styles/AboutPage.css";
-function AboutPage({ cssClass }) {
+import { Link } from "react-router-dom";
+function AboutPage() {
   return (
     <>
-      <div className={`About-page-intro ${cssClass}`}>
-        <div className="About-page-right">
+      <div className="flex justify-between items-center px-[150px]">
+        {/* left  */}
+        <div className="">
           <div className="About-page-img-stack">
             <img
               src="https://themewagon.github.io/satner/img/about-us.png"
@@ -15,10 +16,11 @@ function AboutPage({ cssClass }) {
             />
           </div>
         </div>
-        <div className="About-page-left">
-          <h2>About me</h2>
+        {/* right  */}
+        <div className="w-1/2">
+          <h1 className="font-bold text-4xl">About me</h1>
 
-          <p>
+          <p className="text-[#252525]">
             I'm an Computer Science Engineering undergrad aspiring to become a
             skilled software developer. I'm an avid learner and always looking
             for oppurtunities to increase my skillset. I'm currently working on
@@ -31,10 +33,10 @@ function AboutPage({ cssClass }) {
             delectus fugit facere recusandae architecto aliquam consequuntur
             libero dolorum magnam dolores.
           </p>
-          <a href="/Project">
+          <Link to="/Project">
             {" "}
-            <button className={`all-btn ${cssClass}`}>get cv</button>
-          </a>
+            <button className="all-btn">Get CV</button>
+          </Link>
         </div>
       </div>
     </>

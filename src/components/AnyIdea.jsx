@@ -1,23 +1,27 @@
 import React from "react";
-import "../styles/AnyIdea.css";
 import { Link } from "react-router-dom";
-function AnyIdea({cssClass}) {
+function AnyIdea() {
   return (
     <>
-      <div className={`anyidea ${cssClass}`}>
-        <div className="idea-imgg">
+      <div className="flex items-center justify-center gap-10 mt-32 px-[150px]">
+        {/* left  */}
+        <div className="">
           <img
             src="https://themewagon.github.io/satner/img/banner/home-right.png"
             alt=""
-            className="idea-img"
+            className="w-[500px]"
           />
         </div>
-        <div className="idea-details">
-          <h3>Have Any Project In Your Mind </h3>
-          <p>
-           If You have any interesting projects idea in your mind please feel free to contact us.
+        {/* right  */}
+        <div className="">
+          <h1 className="font-bold text-4xl">Have Any Project In Your Mind </h1>
+          <p className="text-[#252525]">
+            If You have any interesting projects idea in your mind please feel
+            free to contact us.
           </p>
-        <Link to="/Contact"><button className={`all-btn ${cssClass}`}>contact me</button></Link>  
+          <Link to="/Contact">
+            <button className="all-btn">Contact Me</button>
+          </Link>
         </div>
       </div>
     </>

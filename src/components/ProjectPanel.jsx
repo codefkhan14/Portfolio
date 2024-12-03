@@ -1,102 +1,50 @@
 import React from "react";
-import "../styles/ProjectPanel.css";
-import Inter from "../inter.png";
-import Portfolio from "../portfolio.png";
 import bandhejhub from "../bandhejhub.png";
-function ProjectPanel({ cssClass }) {
+import GithubIcom from "../assets/github.svg";
+import WebsiteIcom from "../assets/website.svg";
+function ProjectPanel() {
+  const Projects = [
+    {
+      title: "Bandhej Hub",
+      description:
+        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+      github: "http://localhost:3000/Project",
+      live: "http://localhost:3000/Project",
+    },
+    {
+      title: "Bandhej Hub",
+      description:
+        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+      github: "http://localhost:3000/Project",
+      live: "http://localhost:3000/Project",
+    },
+    {
+      title: "Bandhej Hub",
+      description:
+        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+      github: "http://localhost:3000/Project",
+      live: "http://localhost:3000/Project",
+    },
+    {
+      title: "Bandhej Hub",
+      description:
+        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+      github: "http://localhost:3000/Project",
+      live: "http://localhost:3000/Project",
+    },
+  ];
   return (
     <>
-      <div className={`project-panel ${cssClass}`}>
-        <h2>Our Projects</h2>
-        <p className="project-p">
+      <div className="flex flex-col items-center px-[150px]">
+        <h1 className="font-bold text-4xl">Our Projects</h1>
+        <p className="text-center text-[#252525]">
           This collection showcases projects highlighting skills and expertise
           applied in real-world scenarios.
         </p>
-        <div className="projects-list">
-          <div className="card">
-            <img src={bandhejhub} className="card-img-top" alt="Loading..." />
-            <div className={`card-body ${cssClass}`}>
-              <h5 className="card-title">Bandhej Hub</h5>
-              <p className="card-text">
-                Bandhej Hub" is an ecommerce platform specializing in bandhani
-                products
-              </p>
-              <div className="project-btn">
-                <a
-                  href="https://github.com/codefkhan14/Shopping-Website"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Github
-                </a>
-                <a
-                  href="https://bandhejhub.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <img src={Inter} className="card-img-top" alt="Loading..." />
-            <div className={`card-body ${cssClass}`}>
-              <h5 className="card-title">Inter</h5>
-              <p className="card-text">
-                Inter is a club, it's a vibrant community where technology
-                enthusiasts come together.
-              </p>
-              <div className="project-btn">
-                <a
-                  href="https://github.com/codefkhan14/Inter-Club"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Github
-                </a>
-                <a
-                  href="https://interccslub.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <img src={Portfolio} className="card-img-top" alt="Loading..." />
-            <div className={`card-body ${cssClass}`}>
-              <h5 className="card-title">Portfolio Website</h5>
-              <p className="card-text">
-                A Portfolio website, where i have presented myself and showcase
-                my skills projects and more.
-              </p>
-              <div className="project-btn">
-                <a
-                  href="https://github.com/codefkhan14/Portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Github
-                </a>
-                <a
-                  href="https://furkan-portfolio.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+          {Projects.map((item) => (
+            <ProjectCard key={item.title} project={item} />
+          ))}
         </div>
       </div>
     </>
@@ -104,3 +52,28 @@ function ProjectPanel({ cssClass }) {
 }
 
 export default ProjectPanel;
+
+const ProjectCard = ({ project }) => {
+  return (
+    <div className="border-2 shadow-md w-[350px] p-2 rounded-md">
+      {/* image  */}
+      <img src={bandhejhub} className="border" alt="Loading..." />
+      {/* details  */}
+      <div className="p-2">
+        {/* title  */}
+        <h5 className="font-semibold text-xl">{project.title}</h5>
+        {/* about   */}
+        <p className="text-sm">{project.description}</p>
+        {/* icon  */}
+        <div className="flex items-center justify-end gap-2">
+          <a href={project.github}>
+            <img src={GithubIcom} alt="load.." srcset="" className="w-6" />
+          </a>
+          <a href={project.live}>
+            <img src={WebsiteIcom} alt="load.." srcset="" className="w-10" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
