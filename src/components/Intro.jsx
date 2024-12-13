@@ -3,13 +3,15 @@ import { TypeAnimation } from "react-type-animation";
 function Intro() {
   // window.open(Resume)
   return (
-    <div className="flex items-center justify-between px-[150px]">
+    <div className="flex justify-between px-[150px] pt-16">
       {/* left  */}
       <div className="w-1/2">
-        <h1 className="font-bold text-4xl">Hey 🖐️! MD FURKAN</h1>
-        <h1>
+        <h1 className="font-extrabold text-5xl text-textWhiteColor">
+          Hey 🖐️! MD FURKAN
+        </h1>
+        <h1 className="text-textWhiteColor text-5xl font-extrabold">
           I am a{" "}
-          <span>
+          <span className="text-textThemeColor">
             <TypeAnimation
               sequence={[
                 " Full Stack Developer",
@@ -25,7 +27,7 @@ function Intro() {
             />
           </span>
         </h1>
-        <p className="text-[#252525]">
+        <p className="text-textWhiteColor">
           I'm a passionate Computer Science undergrad aspiring to excel as a
           software developer. With a focus on web development, competitive
           programming, and open source, I'm building a strong foundation. Blend
@@ -33,7 +35,7 @@ function Intro() {
           collaboration, and my journey will lead to success.
         </p>
         {/* buttons  */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3 mt-8">
           <div>
             <button className="all-btn">Hire Me</button>
           </div>
@@ -51,9 +53,9 @@ function Intro() {
       {/* right  */}
       <div className="">
         <img
-          src="https://themewagon.github.io/satner/img/banner/home-right.png"
+          src="https://i.pinimg.com/736x/7b/20/d5/7b20d5c6cadab61670a2d915263a6b00.jpg"
           alt="load"
-          className="w-[500px]"
+          className="w-[450px] h-[400px] rounded-xl"
         />
       </div>
     </div>

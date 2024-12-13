@@ -8,16 +8,15 @@ function Faq({ cssClass }) {
       className={`accordion accordion-flush ${cssClass}`}
       id="accordionFlushExample"
     >
-      <h1>FAQ</h1>
-
-      <p className="text-[#252525]">
+      <h1 className="font-extrabold text-textThemeColor text-4xl ">FAQ</h1>
+      <p className="text-textWhiteColor text-center">
         Explore my portfolio, learn about my skills, and get answers to
         frequently asked questions about my work, collaborations, and more
       </p>
-      <div className="accordion-item">
+      <div className="accordion-item ">
         <h2 className="accordion-header">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne"
