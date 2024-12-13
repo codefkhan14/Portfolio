@@ -5,22 +5,20 @@ function AboutPage() {
     <>
       <div className="flex justify-between items-center px-[150px]">
         {/* left  */}
-        <div className="">
-          <div className="About-page-img-stack">
-            <img
-              src="https://themewagon.github.io/satner/img/about-us.png"
-              alt=""
-              width="450px"
-              height="450px"
-              className="About-page-img"
-            />
-          </div>
+        <div>
+          <img
+            src="https://i.pinimg.com/736x/7b/20/d5/7b20d5c6cadab61670a2d915263a6b00.jpg"
+            alt="load"
+            className="w-[450px] h-[400px] rounded-xl"
+          />
         </div>
         {/* right  */}
-        <div className="w-1/2">
-          <h1 className="font-bold text-4xl">About me</h1>
+        <div className="w-[60%]">
+          <h1 className="font-extrabold text-textThemeColor text-5xl">
+            About me
+          </h1>
 
-          <p className="text-[#252525]">
+          <p className="text-textWhiteColor">
             I'm an Computer Science Engineering undergrad aspiring to become a
             skilled software developer. I'm an avid learner and always looking
             for oppurtunities to increase my skillset. I'm currently working on

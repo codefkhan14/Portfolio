@@ -30,8 +30,8 @@ function Service() {
   return (
     <>
       <div className="flex flex-col items-center px-[150px] mt-32">
-        <h1 className="font-bold text-4xl">Services Offer</h1>
-        <p className="text-center text-[#252525]">
+        <h1 className="font-extrabold text-textThemeColor text-4xl">Services Offer</h1>
+        <p className="text-center text-textWhiteColor">
           Is give may shall likeness made yielding spirit a itself togeth
           created after sea
         </p>
@@ -50,13 +50,13 @@ export default Service;
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className="flex flex-col items-center border-2 shadow-md w-[350px] p-4 rounded-md ">
+    <div className="flex flex-col items-center border-2 shadow-md w-[350px] p-4 rounded-xl ">
       <div>
         <img src={service.icon} alt="" />
       </div>
 
-      <h5 className="font-semibold text-xl mt-2">{service.title}</h5>
-      <p className="texts-sm text-[#252525]">
+      <h5 className="font-extrabold text-2xl mt-2 text-textThemeColor">{service.title}</h5>
+      <p className="text-base text-center text-textWhiteColor">
         We'll work with you to create a website that meets your unique needs and
         goals.
       </p>

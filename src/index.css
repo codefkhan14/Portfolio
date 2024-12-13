@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: #0b011c;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
@@ -16,20 +17,14 @@ body {
   background-position: 100%;
 }
 .all-btn {
-  padding: 0.5rem 1.5rem;
-  background-color: #1d2aea;
+  padding: 11px 1.5rem;
+  background-color: #ac45bf;
   color: white;
-  font-weight: 600;
-  border-radius: 0.7rem;
-  /* transition: all 0.2s ease-in-out; */
+  border-radius: 30px;
   transform: scale(1);
 }
 
 .all-btn:hover {
-  background: linear-gradient(
-    to right,
-    #2727ef,
-    #d70ef6
-  ); /* Gradient on hover */
+  background-color: #9d41ad;
   transform: scale(1.05);
 }

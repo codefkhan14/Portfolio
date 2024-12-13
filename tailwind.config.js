@@ -13,6 +13,9 @@ module.exports = {
       },
       colors: {
         paragraph: "#252525", // Added here under `colors`
+        textThemeColor: "#ac45bf",
+        textWhiteColor: "#d8d1e2",
+        inputColor: "#241c34",
       },
     },
   },

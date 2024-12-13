@@ -36,8 +36,10 @@ function ProjectPanel() {
   return (
     <>
       <div className="flex flex-col items-center px-[150px]">
-        <h1 className="font-bold text-4xl">Our Projects</h1>
-        <p className="text-center text-[#252525]">
+        <h1 className="font-extrabold text-textThemeColor text-4xl">
+          Our Projects
+        </h1>
+        <p className="text-center text-textWhiteColor">
           This collection showcases projects highlighting skills and expertise
           applied in real-world scenarios.
         </p>
@@ -55,15 +57,19 @@ export default ProjectPanel;
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border-2 shadow-md w-[350px] p-2 rounded-md">
+    <div className="border-2 border-textWhiteColor p-3 shadow-md w-[350px] rounded-xl">
       {/* image  */}
       <img src={bandhejhub} className="border" alt="Loading..." />
       {/* details  */}
       <div className="p-2">
         {/* title  */}
-        <h5 className="font-semibold text-xl">{project.title}</h5>
+        <h5 className="font-extrabold text-2xl mt-2 text-white">
+          {project.title}
+        </h5>
         {/* about   */}
-        <p className="text-sm">{project.description}</p>
+        <p className="text-base text-start text-textWhiteColor">
+          {project.description}
+        </p>
         {/* icon  */}
         <div className="flex items-center justify-end gap-2">
           <a href={project.github}>
