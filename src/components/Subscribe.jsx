@@ -7,8 +7,8 @@ function Subscribe() {
         <div className="flex justify-between items-center">
           {/* left   */}
           <div>
-            <h1 className="font-bold text-4xl text-white">Stay Connected!</h1>
-            <p className="text-textWhiteColor">
+            <h1 className="font-bold text-5xl text-white">Stay Connected!</h1>
+            <p className="text-textWhiteColor pt-2">
               Stay connected and receive updates from anywhere
             </p>
           </div>

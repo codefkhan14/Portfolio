@@ -17,7 +17,7 @@ function Faq() {
       id: 2,
       que: "Can I hire you for a project?",
       ans: "Yes, I'm available for freelance work and collaborations. Please get in touch with me to discuss your project requirements.",
-    }, 
+    },
     {
       id: 3,
       que: "Are you available for remote work?",
@@ -26,16 +26,14 @@ function Faq() {
   ];
 
   return (
-    <div className="bg-backgroundColor py-32 px-40">
-      <h1 className="font-extrabold text-textThemeColor text-center text-4xl">
-        FAQ
-      </h1>
-      <p className="text-textWhiteColor text-center">
+    <div className="bg-backgroundColor px-40 py-80">
+      <h1 className="font-bold text-white text-7xl text-center">FAQ</h1>
+      <p className="text-center text-textWhiteColor pt-2">
         Explore my portfolio, learn about my skills, and get answers to
         frequently asked questions about my work, collaborations, and more
       </p>
 
-      <div className="mt-20 space-y-4">
+      <div className="mt-16 space-y-4">
         {faq.map((item, index) => (
           <div
             key={item.id}
@@ -43,7 +41,7 @@ function Faq() {
           >
             <h2>
               <button
-                className={`w-full text-left px-4 py-2 text-textWhiteColor font-semibold ${
+                className={`w-full text-left px-4 py-4 text-xl text-textWhiteColor font-semibold ${
                   activeIndex === index ? "rounded-t-lg" : "rounded-lg"
                 }`}
                 onClick={() => toggleAccordion(index)}
@@ -52,7 +50,10 @@ function Faq() {
               </button>
             </h2>
             {activeIndex === index && (
-              <div className="px-4 py-2 text-textWhiteColor"> • {item.ans}</div>
+              <div className="px-4 py-4 text-lg text-textWhiteColor">
+                {" "}
+                • {item.ans}
+              </div>
             )}
           </div>
         ))}

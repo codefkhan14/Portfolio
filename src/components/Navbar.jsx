@@ -24,36 +24,36 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/Project"
+            <a
+              href="#projects"
               className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
             >
               Projects
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/Skills"
+            <a
+              href="#skills"
               className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
             >
               Skills
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/About"
+            <a
+              href="#about"
               className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
             >
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              to="/Contact"
+            <a
+              href="#contacts"
               className="no-underline	text-textWhiteColor text-xl font-medium hover:text-textThemeColor"
             >
               Contact Me
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

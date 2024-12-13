@@ -100,19 +100,19 @@ function SkillPanel() {
   ];
   return (
     <>
-      <div className="w-1/2 m-auto">
+      <div className="w-[65%] m-auto pt-16 pb-56">
         {/* top text  */}
         <div className="">
-          <h1 className="font-extrabold text-textThemeColor text-6xl text-center">
+          <h1 className="font-bold text-white text-7xl text-center">
             Tech Stack{" "}
           </h1>
-          <p className="text-center text-textWhiteColor">
+          <p className="text-center text-textWhiteColor pt-2">
             These are my skills on the basis of which i have made projects.
           </p>
         </div>
         {/* skills  */}
         <div className="mt-16">
-          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-5 gap-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-16">
             {skills.map((skill, index) => (
               <div
                 key={index}
