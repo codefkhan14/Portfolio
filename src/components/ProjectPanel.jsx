@@ -35,7 +35,7 @@ function ProjectPanel() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center px-[150px]">
+      <div className="flex flex-col py-32 items-center px-[150px] bg-backgroundColor">
         <h1 className="font-extrabold text-textThemeColor text-4xl">
           Our Projects
         </h1>

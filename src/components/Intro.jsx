@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 function Intro() {
   // window.open(Resume)
   return (
-    <div className="flex justify-between px-[150px] pt-16">
+    <div className="bg-backgroundColor flex justify-between px-[150px] pt-16">
       {/* left  */}
       <div className="w-1/2">
         <h1 className="font-extrabold text-5xl text-textWhiteColor">

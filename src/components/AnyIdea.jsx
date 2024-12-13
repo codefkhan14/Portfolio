@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function AnyIdea() {
   return (
     <>
-      <div className="flex items-center justify-center gap-40 mt-36 px-[150px]">
+      <div className="bg-backgroundColor flex items-center justify-center gap-40 py-36 px-[150px]">
         {/* left  */}
         <div className="">
           <img

@@ -2,8 +2,8 @@ import React from "react";
 
 function Subscribe() {
   return (
-    <>
-      <div className="py-16 px-[150px] mt-32 bg-textThemeColor">
+    <div className=" bg-textThemeColor">
+      <div className="px-[150px] py-20">
         <div className="flex justify-between items-center">
           {/* left   */}
           <div>
@@ -32,7 +32,7 @@ function Subscribe() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

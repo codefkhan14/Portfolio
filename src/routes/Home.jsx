@@ -29,10 +29,10 @@ function Home({ onButtonClick, cssClass }) {
       ) : (
         <div>
           <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
-          <Intro cssClass={cssClass} />
-          <Service cssClass={cssClass} />
-          <AnyIdea cssClass={cssClass} />
-          <Subscribe cssClass={cssClass} />
+          <Intro />
+          <Service />
+          <AnyIdea />
+          <Subscribe />
           <Faq cssClass={cssClass} />
           <Footer cssClass={cssClass} />
           <CopyRightBar cssClass={cssClass} />

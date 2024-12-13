@@ -39,17 +39,6 @@ function Skills({ onButtonClick, cssClass }) {
       )}
     </div>
   );
-  //   <>
-  //     <Navbar />
-  //     <AboutPanel title="SKILLS" />
-  //     <SkillPanel />
-
-  //     <Service/>
-  //     <AnyIdea />
-  //     <Footer />
-  //     <CopyRightBar />
-  //   </>
-  // );
 }
 
 export default Skills;

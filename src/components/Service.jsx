@@ -29,7 +29,7 @@ function Service() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center px-[150px] mt-32">
+      <div className="bg-backgroundColor flex flex-col items-center px-[150px] pt-32">
         <h1 className="font-extrabold text-textThemeColor text-4xl">Services Offer</h1>
         <p className="text-center text-textWhiteColor">
           Is give may shall likeness made yielding spirit a itself togeth

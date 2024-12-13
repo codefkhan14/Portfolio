@@ -29,13 +29,13 @@ function Project({ onButtonClick, cssClass }) {
         </div>
       ) : (
         <div>
-          <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
-          <AboutPanel title="PROJECTS" cssClass={cssClass} />
-          <ProjectPanel cssClass={cssClass} />
-          <Subscribe cssClass={cssClass} />
-          <AnyIdea cssClass={cssClass} />
-          <Footer cssClass={cssClass} />
-          <CopyRightBar cssClass={cssClass} />
+          <Navbar onButtonClick={onButtonClick} />
+          <AboutPanel title="PROJECTS" />
+          <ProjectPanel />
+          <Subscribe />
+          <AnyIdea />
+          <Footer />
+          <CopyRightBar />
         </div>
       )}
     </div>

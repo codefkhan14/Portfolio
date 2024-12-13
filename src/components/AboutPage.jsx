@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function AboutPage() {
   return (
     <>
-      <div className="flex justify-between items-center px-[150px]">
+      <div className="flex justify-between items-center px-[150px] bg-backgroundColor">
         {/* left  */}
         <div>
           <img

@@ -1,16 +1,14 @@
-import React from 'react'
-import '../styles/AboutPanel.css'
-function AboutPanel({title, cssClass}) {
+import React from "react";
+function AboutPanel({ title }) {
   return (
-    <>
-    <div className={`top-aboutPanel ${cssClass}`}>
-
-      <div className="aboutPanel">
-      <h2>{title}</h2>
+    <div className="bg-backgroundColor py-32">
+      <div className="flex items-center justify-center rounded-xl text-3xl bg-custom-gradient w-[600px] h-[300px] m-auto">
+        <h2 className="text-center font-extrabold text-textWhiteColor text-4xl">
+          {title}
+        </h2>
+      </div>
     </div>
-    </div>
-    </>
-  )
+  );
 }
 
-export default AboutPanel
+export default AboutPanel;
