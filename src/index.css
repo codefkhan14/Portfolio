@@ -7,14 +7,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #0b011c;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 body {
-  background-image: url("https://i.stack.imgur.com/HCfU2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
+  background-color: #0b011c;
+
 }
 .all-btn {
   padding: 11px 1.5rem;
@@ -28,3 +28,4 @@ body {
   background-color: #9d41ad;
   transform: scale(1.05);
 }
+ 

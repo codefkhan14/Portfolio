@@ -16,6 +16,7 @@ module.exports = {
         textThemeColor: "#ac45bf",
         textWhiteColor: "#d8d1e2",
         inputColor: "#241c34",
+        backgroundColor: "#0b011c",
       },
     },
   },

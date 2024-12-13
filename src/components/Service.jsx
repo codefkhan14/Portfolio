@@ -29,14 +29,14 @@ function Service() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center px-[150px] mt-32">
-        <h1 className="font-extrabold text-textThemeColor text-4xl">Services Offer</h1>
-        <p className="text-center text-textWhiteColor">
+      <div className="bg-backgroundColor flex flex-col items-center px-[150px] pt-80 pb-48">
+        <h1 className="font-bold text-white text-7xl">Services Offer</h1>
+        <p className="text-center text-textWhiteColor pt-2">
           Is give may shall likeness made yielding spirit a itself togeth
           created after sea
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
           {Services.map((item) => (
             <ServiceCard key={item.title} service={item} />
           ))}
@@ -52,11 +52,11 @@ const ServiceCard = ({ service }) => {
   return (
     <div className="flex flex-col items-center border-2 shadow-md w-[350px] p-4 rounded-xl ">
       <div>
-        <img src={service.icon} alt="" />
+        <img src={service.icon} alt="load" className="py-4" />
       </div>
 
       <h5 className="font-extrabold text-2xl mt-2 text-textThemeColor">{service.title}</h5>
-      <p className="text-base text-center text-textWhiteColor">
+      <p className="text-base text-center text-textWhiteColor pt-2">
         We'll work with you to create a website that meets your unique needs and
         goals.
       </p>

@@ -3,13 +3,14 @@ import { TypeAnimation } from "react-type-animation";
 function Intro() {
   // window.open(Resume)
   return (
-    <div className="flex justify-between px-[150px] pt-16">
+    <div className="bg-backgroundColor flex justify-between px-[150px] pt-32">
       {/* left  */}
       <div className="w-1/2">
-        <h1 className="font-extrabold text-5xl text-textWhiteColor">
+        <h1 className="font-bold text-6xl text-textWhiteColor">
           Hey 🖐️! MD FURKAN
         </h1>
-        <h1 className="text-textWhiteColor text-5xl font-extrabold">
+
+        <h1 className="text-textWhiteColor text-5xl font-bold py-4">
           I am a{" "}
           <span className="text-textThemeColor">
             <TypeAnimation
@@ -27,7 +28,7 @@ function Intro() {
             />
           </span>
         </h1>
-        <p className="text-textWhiteColor">
+        <p className="text-textWhiteColor text-lg">
           I'm a passionate Computer Science undergrad aspiring to excel as a
           software developer. With a focus on web development, competitive
           programming, and open source, I'm building a strong foundation. Blend

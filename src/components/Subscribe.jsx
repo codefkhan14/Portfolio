@@ -2,13 +2,13 @@ import React from "react";
 
 function Subscribe() {
   return (
-    <>
-      <div className="py-16 px-[150px] mt-32 bg-textThemeColor">
+    <div className=" bg-textThemeColor">
+      <div className="px-[150px] py-20">
         <div className="flex justify-between items-center">
           {/* left   */}
           <div>
-            <h1 className="font-bold text-4xl text-white">Stay Connected!</h1>
-            <p className="text-textWhiteColor">
+            <h1 className="font-bold text-5xl text-white">Stay Connected!</h1>
+            <p className="text-textWhiteColor pt-2">
               Stay connected and receive updates from anywhere
             </p>
           </div>
@@ -32,7 +32,7 @@ function Subscribe() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

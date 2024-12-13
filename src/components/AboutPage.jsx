@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function AboutPage() {
   return (
     <>
-      <div className="flex justify-between items-center px-[150px]">
+      <div className="flex justify-between items-start px-[150px] bg-backgroundColor pt-72">
         {/* left  */}
         <div>
           <img
@@ -14,11 +14,9 @@ function AboutPage() {
         </div>
         {/* right  */}
         <div className="w-[60%]">
-          <h1 className="font-extrabold text-textThemeColor text-5xl">
-            About me
-          </h1>
+          <h1 className="font-bold text-white text-6xl text-start">About me</h1>
 
-          <p className="text-textWhiteColor">
+          <p className="text-start text-textWhiteColor pt-4 pb-6 text-lg">
             I'm an Computer Science Engineering undergrad aspiring to become a
             skilled software developer. I'm an avid learner and always looking
             for oppurtunities to increase my skillset. I'm currently working on

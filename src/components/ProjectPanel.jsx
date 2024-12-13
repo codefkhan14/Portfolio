@@ -35,15 +35,15 @@ function ProjectPanel() {
   ];
   return (
     <>
-      <div className="flex flex-col items-center px-[150px]">
-        <h1 className="font-extrabold text-textThemeColor text-4xl">
+      <div className="flex flex-col items-center px-[150px] bg-backgroundColor py-32 pb-56">
+        <h1 className="font-bold text-white text-7xl text-center">
           Our Projects
         </h1>
-        <p className="text-center text-textWhiteColor">
+        <p className="text-center text-textWhiteColor pt-2">
           This collection showcases projects highlighting skills and expertise
           applied in real-world scenarios.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
           {Projects.map((item) => (
             <ProjectCard key={item.title} project={item} />
           ))}
@@ -63,15 +63,15 @@ const ProjectCard = ({ project }) => {
       {/* details  */}
       <div className="p-2">
         {/* title  */}
-        <h5 className="font-extrabold text-2xl mt-2 text-white">
+        <h5 className="font-bold text-2xl mt-2 text-white">
           {project.title}
         </h5>
         {/* about   */}
-        <p className="text-base text-start text-textWhiteColor">
+        <p className="text-base text-start text-textWhiteColor pt-4">
           {project.description}
         </p>
         {/* icon  */}
-        <div className="flex items-center justify-end gap-2">
+        <div className="flex items-center justify-end gap-2 pt-4">
           <a href={project.github}>
             <img src={GithubIcom} alt="load.." srcset="" className="w-6" />
           </a>

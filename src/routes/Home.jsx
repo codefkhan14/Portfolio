@@ -1,43 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
-import AnyIdea from "../components/AnyIdea";
 import CopyRightBar from "../components/CopyRightBar";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Service from "../components/Service";
 import Subscribe from "../components/Subscribe";
-import Spinner from "../components/Spinner";
-import { useLocation } from "react-router-dom";
+import AboutPage from "../components/AboutPage";
+import ProjectPanel from "../components/ProjectPanel";
+import SkillPanel from "../components/SkillPanel";
 
-function Home({ onButtonClick, cssClass }) {
-  const [load, setLoad] = useState(true);
-  const location = useLocation();
-  if (location.pathname === "/") document.title = "Introduction - Furkan";
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(false);
-    }, 1000);
-  });
+function Home({ cssClass }) {
+  document.title = "Furkan - Portfolio";
   return (
     <div>
-      {load ? (
-        <div>
-          <Spinner cssClass={cssClass} />
-        </div>
-      ) : (
-        <div>
-          <Navbar onButtonClick={onButtonClick} cssClass={cssClass} />
-          <Intro cssClass={cssClass} />
-          <Service cssClass={cssClass} />
-          <AnyIdea cssClass={cssClass} />
-          <Subscribe cssClass={cssClass} />
-          <Faq cssClass={cssClass} />
-          <Footer cssClass={cssClass} />
-          <CopyRightBar cssClass={cssClass} />
-        </div>
-      )}
+      <Navbar />
+      <Intro />
+      <Service />
+      <section id="skills">
+        <SkillPanel />
+      </section>
+      <section id="projects">
+        <ProjectPanel />
+      </section>
+      <Subscribe />
+      <section id="about">
+        <AboutPage />
+      </section>
+      <Faq />
+      <section id="contacts">
+        <Footer cssClass={cssClass} />
+      </section>
+      <CopyRightBar cssClass={cssClass} />
     </div>
   );
 }
