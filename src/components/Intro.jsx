@@ -38,7 +38,9 @@ function Intro() {
         {/* buttons  */}
         <div className="flex items-center gap-3 mt-8">
           <div>
-            <button className="all-btn">Hire Me</button>
+            <a href="#contacts">
+              <button className="all-btn">Hire Me</button>
+            </a>
           </div>
           <div>
             <a

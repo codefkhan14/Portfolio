@@ -20,7 +20,7 @@ function Subscribe() {
                   type="email"
                   required
                   placeholder="Email"
-                  className="p-3 w-[350px] bg-inputColor rounded-xl"
+                  className="p-3 w-[350px] bg-inputColor rounded-xl text-textWhiteColor"
                 />
               </div>
               <div>
