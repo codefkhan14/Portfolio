@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 function AboutPage() {
   return (
     <>
@@ -7,7 +6,7 @@ function AboutPage() {
         {/* left  */}
         <div>
           <img
-            src="https://i.pinimg.com/736x/7b/20/d5/7b20d5c6cadab61670a2d915263a6b00.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNSSScwrzpbqREQN0ZbDymzs-BPARfUbXzdqLsqa5vFgXg392c"
             alt="load"
             className="w-[450px] h-[400px] rounded-xl"
           />
@@ -29,10 +28,15 @@ function AboutPage() {
             delectus fugit facere recusandae architecto aliquam consequuntur
             libero dolorum magnam dolores.
           </p>
-          <Link to="/Project">
-            {" "}
-            <button className="all-btn">Get CV</button>
-          </Link>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1jv_DHQAhnsyWMOpRmRb30mlncrmOSAoW/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="all-btn">Get CV</button>
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
-import CopyRightBar from "../components/CopyRightBar";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Service from "../components/Service";
@@ -29,9 +28,8 @@ function Home({ cssClass }) {
       </section>
       <Faq />
       <section id="contacts">
-        <Footer cssClass={cssClass} />
+        <Footer />
       </section>
-      <CopyRightBar cssClass={cssClass} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import bandhejhub from "../bandhejhub.png";
+import bandhejhub from "../assets/bandhejhub.png";
 import GithubIcom from "../assets/github.svg";
 import WebsiteIcom from "../assets/website.svg";
 function ProjectPanel() {
@@ -63,9 +63,7 @@ const ProjectCard = ({ project }) => {
       {/* details  */}
       <div className="p-2">
         {/* title  */}
-        <h5 className="font-bold text-2xl mt-2 text-white">
-          {project.title}
-        </h5>
+        <h5 className="font-bold text-2xl mt-2 text-white">{project.title}</h5>
         {/* about   */}
         <p className="text-base text-start text-textWhiteColor pt-4">
           {project.description}
