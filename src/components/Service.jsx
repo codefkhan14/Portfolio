@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import "../components/styles/Service.css";
 
 function Service() {
   const Services = [
@@ -27,39 +29,61 @@ function Service() {
       icon: "https://themewagon.github.io/satner/img/services/s4.png",
     },
   ];
-  return (
-    <>
-      <div className="bg-backgroundColor flex flex-col items-center px-[150px] pt-80 pb-48">
-        <h1 className="font-bold text-white text-7xl">Services Offer</h1>
-        <p className="text-center text-textWhiteColor pt-2">
-          Is give may shall likeness made yielding spirit a itself togeth
-          created after sea
-        </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
-          {Services.map((item) => (
-            <ServiceCard key={item.title} service={item} />
-          ))}
-        </div>
+  // State to check screen size
+  const [isWebView, setIsWebView] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsWebView(window.innerWidth >= 768); // Set web view for screens >= 768px
+    };
+
+    // Check screen size on load and on resize
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  return (
+    <div className="bg-backgroundColor flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-[150px] pt-20 pb-16">
+      <h1 className="font-bold text-white text-4xl md:text-6xl text-center">
+        Services I Offer
+      </h1>
+      <p className="text-center text-textWhiteColor mt-4 max-w-3xl">
+        I help businesses and individuals bring their ideas to life with
+        professional, custom-built web solutions tailored to meet your goals.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12 justify-center mx-auto">
+        {Services.map((item, index) => (
+          <ServiceCard key={index} service={item} isWebView={isWebView} />
+        ))}
       </div>
-    </>
+    </div>
   );
 }
 
 export default Service;
 
-const ServiceCard = ({ service }) => {
+// ServiceCard Component with Hover Transition
+const ServiceCard = ({ service, isWebView }) => {
   return (
-    <div className="flex flex-col items-center border-2 shadow-md w-[350px] p-4 rounded-xl ">
-      <div>
-        <img src={service.icon} alt="load" className="py-4" />
-      </div>
-
-      <h5 className="font-extrabold text-2xl mt-2 text-textThemeColor">{service.title}</h5>
-      <p className="text-base text-center text-textWhiteColor pt-2">
-        We'll work with you to create a website that meets your unique needs and
-        goals.
-      </p>
+    <div className="flex flex-col items-center border-2 border-gray-600 shadow-lg w-full max-w-sm p-6 rounded-2xl bg-gray-800 text-center service-bounce">
+      <img
+        src={service.icon}
+        alt={service.title}
+        className="py-4 object-contain"
+      />
+      <motion.h5 className="font-extrabold text-2xl mt-2 text-textThemeColor">
+        {service.title}
+      </motion.h5>
+      <motion.p
+        initial={{ opacity: isWebView ? 0 : 1 }}
+        className="text-base text-textWhiteColor mt-2"
+      >
+        {service.description}
+      </motion.p>
     </div>
   );
 };
