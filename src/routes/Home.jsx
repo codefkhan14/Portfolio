@@ -14,7 +14,9 @@ function Home({ cssClass }) {
   return (
     <div>
       <Navbar />
-      <Intro />
+      <section id="home">
+        <Intro />
+      </section>
       <Service />
       <section id="skills">
         <SkillPanel />
@@ -22,7 +24,7 @@ function Home({ cssClass }) {
       <section id="projects">
         <ProjectPanel />
       </section>
-      <Subscribe />
+      {/* <Subscribe /> */}
       <section id="about">
         <AboutPage />
       </section>

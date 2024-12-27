@@ -89,7 +89,7 @@ function Footer() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white py-3 hover:bg-purple-500 transition duration-300 rounded-xl"
+              className="w-full bg-textThemeColor text-white py-3 hover:bg-purple-500 transition duration-300 rounded-xl"
             >
               Send
             </button>
