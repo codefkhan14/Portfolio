@@ -6,7 +6,7 @@ import XIcon from "../assets/x.svg";
 
 function Footer() {
   return (
-    <div className="bg-backgroundColor text-textWhiteColor flex justify-center">
+    <div className="bg-backgroundColor text-textWhiteColor flex justify-center md:mb-24 mb-20">
       <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 flex flex-col md:flex-row gap-12 md:gap-40">
         {/* Left Side - Contact Information */}
         <div className="w-full md:w-1/2 space-y-6">
