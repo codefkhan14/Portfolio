@@ -36,7 +36,7 @@ function ProjectPanel() {
   ];
 
   return (
-    <div className="flex flex-col items-center px-4 sm:px-12 md:px-24 lg:px-32 bg-backgroundColor py-16 pb-32">
+    <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-24 bg-backgroundColor py-16 pb-32">
       <h1 className="font-bold text-white text-4xl sm:text-5xl md:text-6xl text-center">
         My Projects
       </h1>

@@ -3,10 +3,11 @@ import GithubIcon from "../assets/github.svg";
 import InstaIcon from "../assets/instagram.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import XIcon from "../assets/x.svg";
+
 function Footer() {
   return (
     <div className="bg-backgroundColor text-textWhiteColor flex justify-center">
-      <div className="px-[150px] py-12 flex flex-col md:flex-row gap-40">
+      <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-12 flex flex-col md:flex-row gap-12 md:gap-40">
         {/* Left Side - Contact Information */}
         <div className="w-full md:w-1/2 space-y-6">
           <h1 className="text-4xl font-bold">Contact Us</h1>
@@ -32,31 +33,31 @@ function Footer() {
               +91-9571604650
             </p>
           </div>
-          {/* icons   */}
+          {/* icons */}
           <div className="flex items-center gap-6">
             <a
               href="https://github.com/codefkhan14"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={GithubIcon} alt="" className="w-6" />
+              <img src={GithubIcon} alt="GitHub" className="w-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/mohammed-furkan14/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={LinkedinIcon} alt="" className="w-6" />
+              <img src={LinkedinIcon} alt="LinkedIn" className="w-6" />
             </a>
             <a href="https://x.com/fkfurkan14" target="_blank" rel="noreferrer">
-              <img src={XIcon} alt="" className="w-6" />
+              <img src={XIcon} alt="X" className="w-6" />
             </a>
             <a
               href="https://www.instagram.com/furkan.14_/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={InstaIcon} alt="" className="w-6" />
+              <img src={InstaIcon} alt="Instagram" className="w-6" />
             </a>
           </div>
         </div>
