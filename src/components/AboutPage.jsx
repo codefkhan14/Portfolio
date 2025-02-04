@@ -13,12 +13,12 @@ function AboutPage() {
           />
         </div>
         {/* right  */}
-        <div className="w-full lg:w-[60%]">
-          <h1 className="font-bold text-white text-4xl sm:text-5xl md:text-6xl text-start">
+        <div className="w-full lg:w-[60%] flex flex-col justify-center sm:items-start items-center">
+          <h1 className="font-bold text-white text-4xl sm:text-5xl md:text-6xl sm:text-start text-center">
             About me
           </h1>
 
-          <p className="text-start text-textWhiteColor pt-4 pb-6 text-base sm:text-lg">
+          <p className="text-center text-textWhiteColor pt-4 pb-6 text-base sm:text-lg sm:text-start">
             I'm an Computer Science Engineering undergrad aspiring to become a
             skilled software developer. I'm an avid learner and always looking
             for oppurtunities to increase my skillset. I'm currently working on
