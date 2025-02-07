@@ -1,5 +1,4 @@
 import React from "react";
-import GithubIcom from "../assets/github.svg";
 import WebsiteIcom from "../assets/website.svg";
 
 function ProjectPanel() {
@@ -21,14 +20,14 @@ function ProjectPanel() {
     {
       title: "Proacademy",
       description:
-        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+        "I developed the promotional website for ProAcademy, an e-learning platform for gamers to purchase courses from top coaches, book 1:1 live sessions, and access expert guides to enhance their skills.",
       live: "https://proacademy.vercel.app",
       image: "/proacademy.jpeg",
     },
     {
       title: "College Website",
       description:
-        "Bandhej Hub is an ecommerce platform specializing in bandhani products Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi",
+        "I developed the website for the School of Engineering at JNU, showcasing their B.Tech program, faculty, and events. It also provides essential information about admissions and academic resources for prospective students.",
       live: "https://soe-jnu.vercel.app/",
       image: "/soe-jnu.jpeg",
     },
@@ -65,7 +64,7 @@ const ProjectCard = ({ project }) => {
       />
 
       {/* Project Details */}
-      <div className="mt-4 h-48 flex flex-col items-center justify-between">
+      <div className="mt-4 h-56 flex flex-col items-center justify-between">
         <div>
           <h5 className="font-bold text-2xl text-white text-center">
             {project.title}

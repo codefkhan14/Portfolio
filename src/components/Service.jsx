@@ -59,21 +59,6 @@ function Service() {
     },
   ];
 
-  // State to check screen size
-  // const [isWebView, setIsWebView] = useState(false);
-
-  // useEffect(() => {
-  //   const checkScreenSize = () => {
-  //     setIsWebView(window.innerWidth >= 768); // Set web view for screens >= 768px
-  //   };
-
-  //   // Check screen size on load and on resize
-  //   checkScreenSize();
-  //   window.addEventListener("resize", checkScreenSize);
-
-  //   return () => window.removeEventListener("resize", checkScreenSize);
-  // }, []);
-
   return (
     <div className="bg-backgroundColor flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-[150px] pt-20 pb-16">
       <h1 className="font-bold text-white text-4xl md:text-6xl text-center">
